@@ -1,4 +1,4 @@
-/**
+﻿/**
 * Template Name: Personal
 * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
 * Updated: Mar 05 2025 with Bootstrap v5.3.3
@@ -120,10 +120,12 @@
     });
   }
 
-  /**
-   * Initiate Pure Counter
-   */
-  new PureCounter();
+    /**
+     * Initiate Pure Counter
+     */
+    if (typeof PureCounter !== 'undefined') {
+        new PureCounter();
+    }
 
   /**
    * Animate the skills items on reveal
@@ -200,5 +202,136 @@
     });
 
   });
+
+})();
+
+// Carrousel Embla - Version multi-carrousels
+(function () {
+    'use strict';
+
+    function initEmbla() {
+        console.log('🎬 Tentative initialisation Embla');
+
+        // Trouver TOUS les carrousels Embla sur la page
+        const emblaNodes = document.querySelectorAll('.embla__viewport');
+
+        if (emblaNodes.length === 0) {
+            console.log('ℹ️ Pas de carrousel Embla sur cette page');
+            return;
+        }
+
+        if (typeof EmblaCarousel === 'undefined') {
+            console.error('❌ EmblaCarousel non chargé');
+            return;
+        }
+
+        console.log('✅ ' + emblaNodes.length + ' carrousel(s) Embla trouvé(s)');
+
+        // Initialiser chaque carrousel
+        emblaNodes.forEach((emblaNode, index) => {
+            try {
+                const embla = EmblaCarousel(emblaNode, {
+                    loop: false,
+                    dragFree: true,
+                    containScroll: 'trimSnaps',
+                    slidesToScroll: 1,
+                    align: 'start'
+                });
+
+                console.log('✅ Carrousel ' + (index + 1) + ' initialisé');
+
+                // Trouver les éléments de CE carrousel spécifique
+                const emblaContainer = emblaNode.closest('.embla');
+                const prevBtn = emblaContainer.querySelector('.embla__button--prev');
+                const nextBtn = emblaContainer.querySelector('.embla__button--next');
+                const counterCurrent = emblaContainer.querySelector('.embla__counter-current');
+                const counterTotal = emblaContainer.querySelector('.embla__counter-total');
+
+                // Fonction pour mettre à jour le compteur
+                function updateCounter() {
+                    const current = embla.selectedScrollSnap() + 1;
+                    // Compter le nombre réel de slides (vidéos)
+                    const total = emblaNode.querySelectorAll('.embla__slide').length;
+
+                    if (counterCurrent) counterCurrent.textContent = current;
+                    if (counterTotal) counterTotal.textContent = total;
+                }
+
+                // Initialiser le compteur
+                updateCounter();
+
+                // Mettre à jour le compteur à chaque changement
+                embla.on('select', updateCounter);
+
+                // Fonction pour activer/désactiver les boutons
+                function updateButtons() {
+                    if (prevBtn) {
+                        prevBtn.disabled = !embla.canScrollPrev();
+                    }
+                    if (nextBtn) {
+                        nextBtn.disabled = !embla.canScrollNext();
+                    }
+                }
+
+                // Initialiser l'état des boutons
+                updateButtons();
+
+                // Mettre à jour les boutons à chaque changement
+                embla.on('select', updateButtons);
+                embla.on('reInit', updateButtons);
+
+                // Événements des boutons
+                if (prevBtn) {
+                    prevBtn.addEventListener('click', function () {
+                        console.log('⬅️ Précédent - Carrousel ' + (index + 1));
+                        embla.scrollPrev();
+                    });
+                }
+
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', function () {
+                        console.log('➡️ Suivant - Carrousel ' + (index + 1));
+                        embla.scrollNext();
+                    });
+                }
+
+                // Autoplay avec retour au début à la fin
+                let autoplayInterval = setInterval(function () {
+                    if (embla.canScrollNext()) {
+                        embla.scrollNext();
+                    } else {
+                        embla.scrollTo(0);
+                    }
+                }, 4000);
+
+                // Pause au survol du carrousel
+                if (emblaContainer) {
+                    emblaContainer.addEventListener('mouseenter', function () {
+                        clearInterval(autoplayInterval);
+                        console.log('⏸️ Pause autoplay - Carrousel ' + (index + 1));
+                    });
+
+                    emblaContainer.addEventListener('mouseleave', function () {
+                        autoplayInterval = setInterval(function () {
+                            if (embla.canScrollNext()) {
+                                embla.scrollNext();
+                            } else {
+                                embla.scrollTo(0);
+                            }
+                        }, 4000);
+                        console.log('▶️ Reprise autoplay - Carrousel ' + (index + 1));
+                    });
+                }
+
+            } catch (error) {
+                console.error('❌ Erreur lors de l\'initialisation du carrousel ' + (index + 1) + ':', error);
+            }
+        });
+    }
+
+    // Attendre que tout soit chargé
+    window.addEventListener('load', function () {
+        setTimeout(initEmbla, 300);
+    });
 
 })();
