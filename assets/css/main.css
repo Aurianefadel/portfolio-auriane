@@ -1,4 +1,4 @@
-/**
+Ôªø/**
 * Template Name: Personal
 * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
 * Updated: Mar 05 2025 with Bootstrap v5.3.3
@@ -334,9 +334,29 @@ h6 {
         font-size: 1rem;
         font-weight: 500;
     }
+
+    /* Vignette YouTube cliquable - ajustement de l'image */
+    .video-thumbnail-link .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* Ratio 16:9 */
+        height: 0;
+        overflow: hidden;
+        background: #000; /* Fond noir pour les bandes si n√©cessaire */
+    }
+
+    .video-thumbnail-link .video-thumbnail {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* ou object-fit: contain; si vous pr√©f√©rez voir l'image enti√®re */
+        transition: transform 0.3s ease;
+    }
+
 }
 
-/* Styles pour les catÈgories vidÈo */
+/* Styles pour les cat√©gories vid√©o */
 .video-categories {
     padding: 0.8rem;
 }
@@ -402,7 +422,7 @@ h6 {
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
-/* Styles pour les catÈgories photos */
+/* Styles pour les cat√©gories photos */
 .photo-categories {
     padding: 0.8rem;
 }
@@ -471,7 +491,7 @@ h6 {
     font-size: 20px;
     font-weight: 700;
     text-align: center;
-    margin: 0rem 0 3rem 0; /* AugmentÈ l'espace du haut et du bas */
+    margin: 0rem 0 3rem 0; /* Augment√© l'espace du haut et du bas */
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: var(--heading-font);
@@ -618,7 +638,7 @@ h6 {
         font-weight: 500;
     }
 
-    /* Styles pour les catÈgories vidÈo */
+    /* Styles pour les cat√©gories vid√©o */
     .video-categories {
         padding: 0.8rem;
     }
@@ -752,24 +772,65 @@ h6 {
         font-size: 20px;
         font-weight: 700;
         text-align: center;
-        margin: 0rem 0 1rem 0; /* AugmentÈ l'espace du haut et du bas */
+        margin: 0rem 0 1rem 0; /* Augment√© l'espace du haut et du bas */
         text-transform: uppercase;
         letter-spacing: 1px;
         font-family: var(--heading-font);
+    }
+
+    /* Vignette YouTube cliquable - ajustement de l'image */
+    .video-thumbnail-link .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* Ratio 16:9 */
+        height: 0;
+        overflow: hidden;
+        background: #000; /* Fond noir pour les bandes si n√©cessaire */
+    }
+
+    .video-thumbnail-link .video-thumbnail {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* ou object-fit: contain; si vous pr√©f√©rez voir l'image enti√®re */
+        transition: transform 0.3s ease;
+    }
+
+    .play-button-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 80px;
+        color: rgba(255, 255, 255, 0.9);
+        transition: all 0.3s ease;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        z-index: 2;
+    }
+
+    .video-thumbnail-link:hover .video-thumbnail {
+        transform: scale(1.05);
+    }
+
+    .video-thumbnail-link:hover .play-button-overlay {
+        color: #E7473C;
+        transform: translate(-50%, -50%) scale(1.1);
     }
 }
 
     /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
-    .footer {
-        color: var(--default-color);
-        background-color: var(--background-color);
-        font-size: 14px;
-        text-align: center;
-        padding: 30px 0;
-        position: relative;
-    }
+.footer {
+    color: var(--default-color);
+    background-color: var(--background-color);
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
 
         /*.footer h3 {
   font-size: 36px;
@@ -1002,7 +1063,7 @@ h6 {
         color: var(--font-color);
         background-color: var(--background-color);
         padding-top: 1rem;
-        padding-bottom: 3rem;
+        padding-bottom: 5rem;
         padding-left:5rem;
         padding-right:5rem;
         scroll-margin-top: 100px;
@@ -1393,8 +1454,8 @@ h6 {
         color: var(--heading-color);
         font-size: 26px;
         font-weight: 700;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: -2rem;
+        margin-bottom: 2rem;
     }
 
     .resume .resume-item {
@@ -1407,15 +1468,15 @@ h6 {
         .resume .resume-item h4 {
             line-height: 18px;
             font-size: 18px;
-            font-weight: 600;
+            font-weight: 800;
             text-transform: uppercase;
-            color: color-mix(in srgb, var(--default-color), transparent 20%);
+            color: color-mix(in srgb, var(--accent-color), transparent 0%);
             margin-bottom: 10px;
         }
 
         .resume .resume-item h5 {
             font-size: 16px;
-            padding: 5px 15px;
+            padding: 5px 0px;
             display: inline-block;
             font-weight: 600;
             margin-bottom: 10px;
@@ -1426,7 +1487,7 @@ h6 {
         }
 
             .resume .resume-item ul li {
-                padding-bottom: 10px;
+                padding-bottom: 5px;
             }
 
         .resume .resume-item:last-child {
@@ -1451,7 +1512,7 @@ h6 {
     .services .service-item {
         background-color: var(--surface-color);
         text-align: center;
-        padding: 80px 20px;
+        padding: 1rem 1rem;
         transition: all ease-in-out 0.3s;
         height: 100%;
     }
@@ -1501,7 +1562,7 @@ h6 {
             margin-bottom: 0;
         }
 
-        .services .service-item:hover {
+/*        .services .service-item:hover {
             background: var(--accent-color);
             border-color: var(--accent-color);
         }
@@ -1521,7 +1582,7 @@ h6 {
             .services .service-item:hover h3,
             .services .service-item:hover p {
                 color: var(--contrast-color);
-            }
+            }*/
 
     /*--------------------------------------------------------------
 # Service Details Section
@@ -1590,7 +1651,7 @@ h6 {
         }
 
     /*--------------------------------------------------------------
-# Portfolio Section (Photos + vidÈos)
+# Portfolio Section (Photos + vid√©os)
 --------------------------------------------------------------*/
     .portfolio .portfolio-filters {
         padding: 0;
@@ -1773,99 +1834,156 @@ h6 {
     /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-    .contact .info-item {
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-        padding: 20px 30px;
+/* Section Contact - Visuels Email et T√©l√©phone */
+.contact .contact-card-wrapper {
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Ligne de s√©paration avant la section Contact */
+.contact.section::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: var(--accent-color);
+    margin: 0 auto 60px auto;
+    opacity: 0.3;
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+    .contact.section::before {
+        width: 80px;
+        margin: 0 auto 40px auto;
+    }
+}
+
+.contact .contact-item {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+    .contact .contact-item:last-child {
+        margin-bottom: 0;
     }
 
-        .contact .info-item .icon {
-            color: var(--contrast-color);
-            background-color: var(--accent-color);
-            width: 56px;
-            height: 56px;
-            font-size: 24px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.3s ease-in-out;
-            border-radius: 50%;
-            margin-right: 15px;
+    .contact .contact-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background: var(--accent-color);
+        border-radius: 12px 0 0 12px;
+        transform: scaleY(0);
+        transition: transform 0.3s ease;
+    }
+
+    .contact .contact-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(231, 71, 60, 0.2);
+    }
+
+        .contact .contact-item:hover::before {
+            transform: scaleY(1);
         }
 
-        .contact .info-item h3 {
-            font-size: 18px;
-            font-weight: 700;
-            margin: 0 0 2px 0;
+    .contact .contact-item .icon {
+        width: 56px;
+        height: 56px;
+        background: var(--accent-color);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 25px;
+        flex-shrink: 0;
+        box-shadow: 0 5px 15px rgba(231, 71, 60, 0.3);
+        transition: all 0.3s ease;
+        color: white;
+    }
+
+    .contact .contact-item:hover .icon {
+        transform: scale(1.1) rotate(5deg);
+        box-shadow: 0 8px 20px rgba(231, 71, 60, 0.5);
+    }
+
+    .contact .contact-item .icon svg {
+        width: 28px;
+        height: 28px;
+    }
+
+.contact .contact-info {
+    flex: 1;
+}
+
+.contact .contact-label {
+    font-size: 0.85em;
+    color: #666;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: var(--heading-font);
+}
+
+.contact .contact-value {
+    font-size: 1.2em;
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+    .contact .contact-value a {
+        color: var(--font-color);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        .contact .contact-value a:hover {
+            color: var(--accent-color);
         }
 
-        .contact .info-item p {
-            padding: 0;
-            margin-bottom: 0;
-            font-size: 14px;
+/* Responsive Mobile */
+@media (max-width: 768px) {
+    .contact .contact-card-wrapper {
+        padding: 30px 20px;
+    }
+
+    .contact .contact-item {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+        .contact .contact-item .icon {
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
         }
 
-        .contact .info-item .social-links a {
-            font-size: 24px;
-            display: inline-block;
-            line-height: 1;
-            margin: 4px 6px 0 0;
-            transition: 0.3s;
-            color: color-mix(in srgb, var(--default-color), transparent 50%);
-        }
-
-            .contact .info-item .social-links a:hover {
-                color: var(--accent-color);
+            .contact .contact-item .icon svg {
+                width: 24px;
+                height: 24px;
             }
 
-    .contact .php-email-form {
-        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-        padding: 30px;
-        margin-top: 30px;
+    .contact .contact-value {
+        font-size: 1.1em;
     }
 
-    @media (max-width: 575px) {
-        .contact .php-email-form {
-            padding: 20px;
-        }
-    }
 
-    .contact .php-email-form input[type=text],
-    .contact .php-email-form input[type=email],
-    .contact .php-email-form textarea {
-        color: var(--default-color);
-        background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-        border-color: color-mix(in srgb, var(--default-color), transparent 80%);
-        font-size: 14px;
-        padding: 10px 15px;
-        box-shadow: none;
-        border-radius: 0;
-    }
-
-        .contact .php-email-form input[type=text]:focus,
-        .contact .php-email-form input[type=email]:focus,
-        .contact .php-email-form textarea:focus {
-            border-color: var(--accent-color);
-        }
-
-        .contact .php-email-form input[type=text]::placeholder,
-        .contact .php-email-form input[type=email]::placeholder,
-        .contact .php-email-form textarea::placeholder {
-            color: color-mix(in srgb, var(--default-color), transparent 70%);
-        }
-
-    .contact .php-email-form button[type=submit] {
-        color: var(--contrast-color);
-        background: var(--accent-color);
-        border: 0;
-        padding: 10px 30px;
-        transition: 0.4s;
-        border-radius: 50px;
-    }
-
-        .contact .php-email-form button[type=submit]:hover {
-            background: color-mix(in srgb, var(--accent-color), transparent 20%);
-        }
-
+}
 
     /*--------------------------------------------------------------
 # Clients Section
@@ -1966,7 +2084,7 @@ h6 {
         }
     }
 
-/* Styles spÈcifiques pour la galerie vidÈo */
+/* Styles sp√©cifiques pour la galerie vid√©o */
 
 /* Desktop (1200px and up) */
  @media (min-width: 1200px) {
@@ -2013,7 +2131,7 @@ h6 {
         overflow: hidden;
     }
 
-        /* VidÈos verticales (Facebook, etc.) */
+        /* Vid√©os verticales (Facebook, etc.) */
         .video-wrapper.vertical {
             padding-bottom: 177.78%; /* Ratio 9:16 pour format vertical */
             max-width: 28rem;
@@ -2023,7 +2141,7 @@ h6 {
 
     .video-item:has(.video-wrapper.vertical) .video-info {
         max-width: 30rem;
-        margin: 30px auto;
+        margin: 0rem auto;
     }
 
         .video-wrapper iframe {
@@ -2086,7 +2204,7 @@ h6 {
         overflow: hidden;
     }
 
-        /* VidÈos verticales (Facebook, etc.) */
+        /* Vid√©os verticales (Facebook, etc.) */
         .video-wrapper.vertical {
             padding-bottom: 177.78%; /* Ratio 9:16 pour format vertical */
             max-width: 21.875rem; /* 350px = 21.875rem */
@@ -2187,7 +2305,7 @@ h6 {
 }
 
 .embla__slide iframe {
-    pointer-events: none;
+    pointer-events: auto !important;
     width: 100%;
     height: 300px;
     border-radius: 10px;
@@ -2201,7 +2319,7 @@ h6 {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* ContrÙles en bas (boutons + compteur) */
+/* Contr√¥les en bas (boutons + compteur) */
 .embla__controls {
     display: flex;
     justify-content: space-between;
@@ -2315,7 +2433,7 @@ h6 {
     }
 }
 
-/* CSS pour les vidÈos Facebook verticales dans Embla */
+/* CSS pour les vid√©os Facebook verticales dans Embla */
 
 /* Desktop */
 @media (min-width: 1200px) {
@@ -2339,7 +2457,7 @@ h6 {
     }
 }
 
-/* Conteneur vidÈo dans le carrousel */
+/* Conteneur vid√©o dans le carrousel */
 .embla__slide.vertical .video-item {
     position: relative;
     border-radius: 0.625rem; /* 10px */
@@ -2370,7 +2488,7 @@ h6 {
     box-shadow: 0 0.9375rem 2.5rem rgba(0, 0, 0, 0.2); /* 0 15px 40px */
 }
 
-/* Wrapper pour les vidÈos verticales dans Embla */
+/* Wrapper pour les vid√©os verticales dans Embla */
 .embla__slide.vertical .video-wrapper.vertical {
     position: relative;
     padding-bottom: 177.78%;
@@ -2403,7 +2521,7 @@ h6 {
     pointer-events: none;
 }
 
-/* Zone de texte sous la vidÈo dans Embla */
+/* Zone de texte sous la vid√©o dans Embla */
 .embla__slide.vertical .video-info {
     background: #FDF8F0;
     padding: 1.4rem;
@@ -2433,6 +2551,17 @@ h6 {
     .embla__slide.vertical .video-info p {
         font-size: 14px;
     }
+
+    /* R√©duire l'espace entre vid√©o et texte UNIQUEMENT sur la page Montages Webedia */
+    .montages-webedia-page .embla__slide.vertical .video-info {
+        padding: 1rem 1.4rem; /* R√©duire le padding du haut */
+        margin-top: 0; /* Supprimer la marge du haut */
+    }
+
+        .montages-webedia-page .embla__slide.vertical .video-info h3 {
+            margin-top: 0; /* Supprimer la marge du haut du titre */
+            margin-bottom: 0.5rem;
+        }
 }
 
 /* Mobile et Tablette */
@@ -2447,6 +2576,17 @@ h6 {
 
         .embla__slide.vertical .video-info p {
             font-size: 12px;
+        }
+
+    /* R√©duire l'espace entre vid√©o et texte UNIQUEMENT sur la page Montages Webedia */
+    .montages-webedia-page .embla__slide.vertical .video-info {
+        padding: 1rem 1.4rem; /* R√©duire le padding du haut */
+        margin-top: 0; /* Supprimer la marge du haut */
+    }
+
+        .montages-webedia-page .embla__slide.vertical .video-info h3 {
+            margin-top: 0; /* Supprimer la marge du haut du titre */
+            margin-bottom: 0.5rem;
         }
 }
 
@@ -2467,7 +2607,7 @@ h6 {
     }
 }
 
-/* CSS pour les vidÈos CARR…ES dans Embla */
+/* CSS pour les vid√©os CARR√âES dans Embla */
 
 /* Desktop */
 @media (min-width: 1200px) {
@@ -2491,7 +2631,7 @@ h6 {
     }
 }
 
-/* Conteneur vidÈo carrÈe dans le carrousel */
+/* Conteneur vid√©o carr√©e dans le carrousel */
 .embla__slide.square .video-item {
     position: relative;
     border-radius: 0.625rem;
@@ -2522,7 +2662,7 @@ h6 {
     box-shadow: 0 0.9375rem 2.5rem rgba(0, 0, 0, 0.2);
 }
 
-/* Wrapper pour les vidÈos carrÈes (ratio 1:1) */
+/* Wrapper pour les vid√©os carr√©es (ratio 1:1) */
 .embla__slide.square .video-wrapper .square {
     position: relative;
     padding-bottom: 100% !important;
@@ -2562,7 +2702,7 @@ h6 {
     pointer-events: none;
 }
 
-/* Zone de texte sous la vidÈo carrÈe */
+/* Zone de texte sous la vid√©o carr√©e */
 .embla__slide.square .video-info {
     background: #FDF8F0;
     padding: 1.4rem;
@@ -2610,8 +2750,8 @@ h6 {
 }
 
 /* ===================================================================
-   NOUVELLE GALERIE VID…OS VERTICALES - Grid Layout
-   Ajoutez ce code ‡ la fin de votre fichier main.css
+   NOUVELLE GALERIE VID√âOS VERTICALES - Grid Layout
+   Ajoutez ce code √† la fin de votre fichier main.css
    =================================================================== */
 
 /* Container de la galerie */
@@ -2621,7 +2761,7 @@ h6 {
     padding: 2rem 0;
 }
 
-/* Grid des vidÈos */
+/* Grid des vid√©os */
 .video-grid {
     display: grid;
     gap: 2rem;
@@ -2642,7 +2782,7 @@ h6 {
     }
 }
 
-/* Chaque item vidÈo */
+/* Chaque item vid√©o */
 .video-grid .video-item {
     position: relative;
     border-radius: 10px;
@@ -2658,7 +2798,7 @@ h6 {
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
     }
 
-/* Wrapper vidÈo vertical */
+/* Wrapper vid√©o vertical */
 .video-grid .video-wrapper.vertical {
     position: relative;
     padding-bottom: 177.78%;
@@ -2680,7 +2820,7 @@ h6 {
         border: 0;
     }
 
-/* Info sous la vidÈo */
+/* Info sous la vid√©o */
 .video-grid .video-info {
     padding: 1.2rem;
     background: #fff;
@@ -2701,7 +2841,7 @@ h6 {
         margin-bottom: 0;
     }
 
-/* Ajustements responsive supplÈmentaires */
+/* Ajustements responsive suppl√©mentaires */
 @media (max-width: 1199px) {
     .video-gallery-section {
         padding: 1rem 0;
@@ -2738,10 +2878,10 @@ h6 {
 
 
 /* ========================================
-   PAGE ¿ PROPOS - STYLES PERSONNALIS…S
+   PAGE √Ä PROPOS - STYLES PERSONNALIS√âS
    ======================================== */
 
-/* Section ¿ propos avec photo */
+/* Section √Ä propos avec photo */
 .about-section {
     padding-top: 2rem;
     padding-bottom: 4rem;
@@ -2757,7 +2897,7 @@ h6 {
         justify-content: center;
     }
 
-/* Texte justifiÈ - Page ¿ propos */
+/* Texte justifi√© - Page √Ä propos */
 .about-page main p {
     text-align: justify;
     text-justify: inter-word;
@@ -2789,19 +2929,19 @@ h6 {
     margin-bottom: 1rem;
 }
 
-/* Section CompÈtences */
+/* Section Comp√©tences */
 .skills-section {
     padding: 2rem 0;
 }
 
 .section-title {
     text-align: center;
-    margin-bottom: 0rem;
+    margin-bottom: -1rem;
 }
 
     .section-title h2 {
         font-family: var(--heading-font);
-        font-size: 2.5rem;
+        font-size: 1.7rem;
         font-weight: 700;
         color: var(--heading-color);
         text-transform: uppercase;
@@ -2812,15 +2952,15 @@ h6 {
 .skill-item {
     background: white;
     border-radius: 15px;
-    padding: 2.5rem;
-    margin-bottom: 2rem;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1rem;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
     .skill-item::before {
@@ -2845,16 +2985,16 @@ h6 {
         }
 
 .skill-icon {
-    width: 70px;
-    height: 70px;
-    min-width: 70px;
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
     background: linear-gradient(135deg, var(--accent-color), #ff5a4d);
-    border-radius: 15px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     box-shadow: 0 5px 15px rgba(231, 71, 60, 0.3);
     transition: all 0.3s ease;
 }
@@ -2870,57 +3010,88 @@ h6 {
 
 .skill-name {
     font-family: var(--heading-font);
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 700;
     color: var(--heading-color);
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.2rem;
 }
 
 .skill-description {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: #666;
-    line-height: 1.5;
+    line-height: 1.4;
 }
 
-/* Section IntÈrÍts */
+/* Mobile */
+@media (max-width: 768px) {
+    .skill-item {
+        padding: 1rem 1.2rem;
+        margin-bottom: 0.8rem;
+        gap: 0.8rem;
+    }
+
+    .skill-icon {
+        width: 45px;
+        height: 45px;
+        min-width: 45px;
+        font-size: 1.3rem;
+    }
+
+    .skill-name {
+        font-size: 0.95rem;
+    }
+
+    .skill-description {
+        font-size: 0.8rem;
+    }
+}
+
+/* Section Int√©r√™ts */
 .interests-section {
-    padding: 3rem 0;
+    padding: 2rem 0;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.interest-card {
-    background-color: #fff;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 2rem;
-    text-align: center;
-    transition: all 0.3s ease;
-    height: 100%;
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+.interests-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    list-style: none;
 }
 
-    .interest-card:hover {
-        border-color: var(--accent-color);
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(231, 71, 60, 0.2);
-    }
+.interest-item {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--font-color);
+    font-family: var(--heading-font);
+    padding: 0 1.2rem;
+    position: relative;
+    margin-top: -1rem;
+}
 
-    .interest-card i {
-        font-size: 3rem;
+    .interest-item:not(:last-child)::after {
+        content: '‚Ä¢';
+        position: absolute;
+        right: 0;
         color: var(--accent-color);
-        margin-bottom: 1rem;
-    }
-
-    .interest-card h3 {
-        font-family: var(--heading-font);
-        font-size: 1.2rem;
         font-weight: 700;
-        color: var(--heading-color);
-        margin: 0;
     }
 
-/* Section TÈmoignages */
+/* Version Mobile */
+@media (max-width: 768px) {
+    .interest-item {
+        font-size: 1rem;
+        padding: 0 0.8rem;
+    }
+}
+
+/* Section T√©moignages */
 .testimonials-section {
-    padding: 4rem 0;
+    padding: 1rem 0;
     background-color: var(--background-color);
 }
 
@@ -3030,14 +3201,14 @@ h6 {
    MEDIA QUERIES - DESKTOP (1200px et +)
    ======================================== */
 @media (min-width: 1200px) {
-    /* Styles spÈcifiques desktop dÈj‡ dÈfinis ci-dessus */
+    /* Styles sp√©cifiques desktop d√©j√† d√©finis ci-dessus */
 }
 
 /* ========================================
    MEDIA QUERIES - MOBILE (max 1199px)
    ======================================== */
 @media (max-width: 1199px) {
-    /* Section ¿ propos */
+    /* Section √Ä propos */
     .about-section {
         padding: 2rem 0;
     }
@@ -3063,7 +3234,7 @@ h6 {
         text-align: center;
     }
 
-    /* Section CompÈtences */
+    /* Section Comp√©tences */
     .skills-section {
         padding: 3rem 0;
     }
@@ -3074,6 +3245,7 @@ h6 {
 
         .section-title h2 {
             font-size: 2rem;
+
         }
 
 
@@ -3096,7 +3268,7 @@ h6 {
         font-size: 0.85rem;
     }
 
-    /* Section IntÈrÍts */
+    /* Section Int√©r√™ts */
     .interests-section {
         padding: 2rem 0;
     }
@@ -3113,7 +3285,7 @@ h6 {
             font-size: 1rem;
         }
 
-    /* Section TÈmoignages */
+    /* Section T√©moignages */
     .testimonials-section {
         padding: 3rem 0;
     }
@@ -3204,7 +3376,7 @@ h6 {
             transform: scale(1.05);
         }
 
-        /* Tailles variÈes pour effet dynamique */
+        /* Tailles vari√©es pour effet dynamique */
         .gallery-item.large {
             grid-column: span 2;
             grid-row: span 2;
@@ -3254,7 +3426,7 @@ h6 {
             transform: scale(1.05);
         }
 
-        /* Tailles variÈes pour effet dynamique */
+        /* Tailles vari√©es pour effet dynamique */
         .gallery-item.large {
             grid-column: span 2;
             grid-row: span 2;
@@ -3277,7 +3449,7 @@ h6 {
         }
 }
 
-/* Lightbox personnalisÈ */
+/* Lightbox personnalis√© */
 .lightbox {
     position: fixed;
     top: 0;
