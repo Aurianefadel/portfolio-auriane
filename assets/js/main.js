@@ -335,3 +335,22 @@
     });
 
 })();
+
+// Slideshow Hero
+const SLIDE_DURATION = 3000; // Durée en millisecondes (5000 = 5 secondes)
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-slideshow img');
+const totalSlides = slides.length;
+
+// Auto-avance
+let slideInterval = setInterval(() => changeSlide(1), SLIDE_DURATION);
+
+function changeSlide(direction) {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    slides[currentSlide].classList.add('active');
+
+    clearInterval(slideInterval);
+    slideInterval = setInterval(() => changeSlide(1), SLIDE_DURATION);
+}

@@ -73,7 +73,7 @@
                 <div class="container">
                     <div class="row d-flex justify-content-center text-center">
                         <div class="col-lg-8">
-                            <h1>Ce que le jour doit à la nuit</h1>
+                            <h1>Ce que le jour <br /> doit à la nuit</h1>
                             <p class="text-black mx-4">Photos lors des répétitions du spectacle "Ce que le jour doit à la nuit". <br /> Photos et retouches par mes soins.</p>
                         </div>
                     </div>
@@ -89,8 +89,6 @@
                 </div>
             </nav>
         </div><!-- End Page Title -->
-
-
         <!-- Galerie de photos -->
         <section class="photo-gallery-section">
             <div class="photo-gallery-grid">
@@ -162,7 +160,10 @@
             <div class="lightbox-content">
                 <img src="" alt="" id="lightbox-img">
             </div>
-            <div class="lightbox-counter" id="lightbox-counter">1 / 12</div>
+            <div class="lightbox-info">
+                <div class="lightbox-counter" id="lightbox-counter">1 / 12</div>
+                <div class="lightbox-description" id="lightbox-description"></div>
+            </div>
         </div>
 
     </main>
@@ -274,7 +275,6 @@
                 preloader.style.display = 'none';
             }
         });
-        }
     </script>
 
     <!-- Scroll Top -->

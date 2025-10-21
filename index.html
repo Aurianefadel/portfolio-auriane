@@ -70,22 +70,46 @@
       <!-- Hero Section -->
       <section id="hero" class="hero section dark-background">
 
+          <!-- Slideshow d'images -->
+          <div class="hero-slideshow">
+              <img src="assets/img/MesPhotos/01_FONDACCUEIL.jpg" alt="Photo 1" class="active">
+              <img src="assets/img/MesPhotos/02_FONDACCUEIL.jpg" alt="Photo 2">
+              <img src="assets/img/MesPhotos/06_FONDACCUEIL.jpg" alt="Photo 3">
+              <img src="assets/img/MesPhotos/04_FONDACCUEIL.jpg" alt="Photo 4">
+              <img src="assets/img/MesPhotos/03_FONDACCUEIL.jpg" alt="Photo 5">
+              <img src="assets/img/MesPhotos/05_FONDACCUEIL.jpg" alt="Photo 6">
+          </div>
 
-
-          <img src="assets/img/MesPhotos/IMG_3236.png" alt="" data-aos="fade-in">
+          <!-- Flèches de navigation -->
+          <button class="hero-arrow hero-arrow-left" onclick="changeSlide(-1)">‹</button>
+          <button class="hero-arrow hero-arrow-right" onclick="changeSlide(1)">›</button>
 
           <div class="container" data-aos="zoom-out" data-aos-delay="1">
               <h2>Auriane Fadel</h2>
-              <p> <span>Freelance, Vidéaste, Monteuse, Photographe</span></p>
+              <p><span>Freelance, Vidéaste, Monteuse, Photographe</span></p>
               <div class="social-links">
                   <a href="https://www.instagram.com/aurianefadel/?hl=fr"><i class="bi bi-instagram"></i></a>
                   <a href="https://www.linkedin.com/in/aurianefadel/"><i class="bi bi-linkedin"></i></a>
               </div>
           </div>
-
       </section>
 
-      <!-- /Hero Section -->
+      <!-- Section Boutons Mobile -->
+      <section class="mobile-cta-buttons">
+          <div class="cta-buttons-container">
+
+              <!-- Bouton Vidéos -->
+              <a href="videos.html" class="cta-button cta-button-videos">
+                  Vidéos
+              </a>
+
+              <!-- Bouton Photos -->
+              <a href="photos.html" class="cta-button cta-button-photos">
+                  Photos
+              </a>
+
+          </div>
+      </section>
 
       <!-- Section Clients -->
       <section class="clients section">
@@ -136,7 +160,7 @@
               <div class="copyright">
                <!--   <span>Copyright</span> <strong class="px-1 sitename">Personal</strong> <span>All Rights Reserved</span>-->
               </div>
-              <div class="credits">
+              <div class="credits text-black">
                   <!-- All the links in the footer should remain intact. -->
                   <!-- You can delete the links only if you've purchased the pro version. -->
                   <!-- Licensing information: https://bootstrapmade.com/license/ -->
