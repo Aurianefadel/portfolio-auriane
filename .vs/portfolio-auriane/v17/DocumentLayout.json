@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\GitHub\\portfolio-auriane\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\salledebain-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:salledebain-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -95,10 +99,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:service-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
@@ -110,7 +110,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 22,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "portfolio.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\portfolio.html",
               "RelativeDocumentMoniker": "portfolio.html",
@@ -138,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "juliette-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\juliette-details.html",
               "RelativeDocumentMoniker": "juliette-details.html",
@@ -150,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "index.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\index.html",
               "RelativeDocumentMoniker": "index.html",
@@ -162,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ilona-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\ilona-details.html",
               "RelativeDocumentMoniker": "ilona-details.html",
@@ -174,7 +174,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "hugo-decrypte.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\hugo-decrypte.html",
               "RelativeDocumentMoniker": "hugo-decrypte.html",
@@ -186,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "dansleschamps-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\dansleschamps-details.html",
               "RelativeDocumentMoniker": "dansleschamps-details.html",
@@ -198,7 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "CQLJDALN-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\CQLJDALN-details.html",
               "RelativeDocumentMoniker": "CQLJDALN-details.html",
@@ -210,7 +210,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "contact.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\contact.html",
               "RelativeDocumentMoniker": "contact.html",
@@ -222,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "clips-musicaux.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\clips-musicaux.html",
               "RelativeDocumentMoniker": "clips-musicaux.html",
@@ -234,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "cassandra-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\cassandra-details.html",
               "RelativeDocumentMoniker": "cassandra-details.html",
@@ -246,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "bnf-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\bnf-details.html",
               "RelativeDocumentMoniker": "bnf-details.html",
@@ -258,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "affiches-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\affiches-details.html",
               "RelativeDocumentMoniker": "affiches-details.html",
@@ -270,7 +270,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "service-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\service-details.html",
               "RelativeDocumentMoniker": "service-details.html",
@@ -282,7 +282,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "salledebain-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\salledebain-details.html",
               "RelativeDocumentMoniker": "salledebain-details.html",
@@ -295,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "phoenix-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\phoenix-details.html",
               "RelativeDocumentMoniker": "phoenix-details.html",
@@ -307,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "merlinlilou-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\merlinlilou-details.html",
               "RelativeDocumentMoniker": "merlinlilou-details.html",
@@ -319,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "videos.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\videos.html",
               "RelativeDocumentMoniker": "videos.html",
@@ -331,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "photos.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\photos.html",
               "RelativeDocumentMoniker": "photos.html",
@@ -343,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "services.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\services.html",
               "RelativeDocumentMoniker": "services.html",
@@ -355,15 +355,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 0,
               "Title": "about.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\about.html",
               "RelativeDocumentMoniker": "about.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\about.html",
               "RelativeToolTip": "about.html",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAADsAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAPkAAAAAAAAAAAAswBgBAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T10:31:33.767Z"
+              "WhenOpened": "2025-10-20T10:31:33.767Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -379,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "lives-teasers.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\lives-teasers.html",
               "RelativeDocumentMoniker": "lives-teasers.html",
@@ -391,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "creations-vlogs.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\creations-vlogs.html",
               "RelativeDocumentMoniker": "creations-vlogs.html",
@@ -403,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "webedia-montages.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\webedia-montages.html",
               "RelativeDocumentMoniker": "webedia-montages.html",
@@ -415,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "animations.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\animations.html",
               "RelativeDocumentMoniker": "animations.html",

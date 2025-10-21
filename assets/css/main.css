@@ -34,8 +34,8 @@
 :root {
     --nav-color: #1a1a1a; /* The default color of the main navmenu links */
     --nav-hover-color: #FF1C04; /* Applied to main navmenu links when they are hovered over or active */
-    --nav-mobile-background-color: #1a1a1a; /* Used as the background color for mobile navigation menu */
-    --nav-dropdown-background-color: #1a1a1a; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+    --nav-mobile-background-color: #FDF8F0; /* Used as the background color for mobile navigation menu */
+    --nav-dropdown-background-color: #FDF8F0; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
     --nav-dropdown-color: #fafafa; /* Used for navigation links of the dropdown items in the navigation menu. */
     --nav-dropdown-hover-color: #18d26e; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
@@ -531,7 +531,7 @@ h6 {
 
         .navmenu a,
         .navmenu a:focus {
-            color: var(--nav-dropdown-color);
+            color: var(--font-color);
             padding: 10px 20px;
             font-family: var(--nav-font);
             font-size: 17px;
@@ -567,7 +567,7 @@ h6 {
             .navmenu a:hover,
             .navmenu .active,
             .navmenu .active:focus {
-                color: var(--nav-dropdown-hover-color);
+                color: var(--accent-color);
             }
 
                 .navmenu .active i,
@@ -1036,24 +1036,38 @@ h6 {
             .page-title nav ol {
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: center;
                 list-style: none;
-                margin: 0;
+                margin: 0rem -1rem;
+                padding: 0;
                 font-size: 13px;
                 font-weight: 600;
             }
 
                 .page-title nav ol li + li {
-                    padding-left: 10px;
+                    padding-left: 0rem;
                 }
 
                     .page-title nav ol li + li::before {
                         content: "/";
                         display: inline-block;
                         padding-right: 10px;
+                        padding-right: 10px;
                         color: color-mix(in srgb, var(--default-color), transparent 70%);
                     }
 
-}
+        /* Centrer les breadcrumbs */
+        .page-title nav.breadcrumbs {
+            text-align: center;
+        }
+
+            .page-title nav.breadcrumbs ol {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 0rem;
+            }
+    }
 
     /*--------------------------------------------------------------
 # Global Sections
@@ -1063,7 +1077,7 @@ h6 {
         color: var(--font-color);
         background-color: var(--background-color);
         padding-top: 1rem;
-        padding-bottom: 5rem;
+        padding-bottom: 2rem;
         padding-left:5rem;
         padding-right:5rem;
         scroll-margin-top: 100px;
@@ -1206,6 +1220,143 @@ h6 {
 
         .hero p {
             font-size: 20px;
+        }
+    }
+
+/* BOUTONS MOBILE - VIDÉOS & PHOTOS */
+/* Ajouter ce code à la fin de votre fichier main.css */
+
+.mobile-cta-buttons {
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    .mobile-cta-buttons {
+        display: block;
+        padding: 1.5rem 1rem 0 1rem;
+        background-color: transparent;
+        position: relative;
+        z-index: 3;
+        margin-top: -14rem;
+    }
+
+    .cta-buttons-container {
+        display: flex;
+        flex-direction: row;
+        gap: 0.8rem;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .cta-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.6rem 0.8rem;
+        background: var(--accent-color);
+        border: none;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        font-family: var(--heading-font);
+        font-weight: 600;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        position: relative;
+        overflow: hidden;
+        flex: 1;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 0.6s ease forwards;
+    }
+
+    /* Délai pour le 2ème bouton */
+    .cta-button-photos {
+        animation-delay: 0.2s;
+    }
+
+    /* Animation de fondu */
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .cta-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(231, 71, 60, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:active {
+            transform: scale(0.98);
+        }
+
+        .cta-button-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .cta-button-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--accent-color), #ff5a4d);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            box-shadow: 0 3px 12px rgba(231, 71, 60, 0.3);
+            flex-shrink: 0;
+        }
+
+        .cta-button-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cta-button-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0.1rem;
+        }
+
+        .cta-button-subtitle {
+            font-size: 0.7rem;
+            font-weight: 400;
+            color: white;
+            font-family: "Roboto", sans-serif;
+        }
+
+        .cta-button-arrow {
+            display: none;
+        }
+
+        .cta-button-videos:hover {
+            background: linear-gradient(135deg, rgba(231, 71, 60, 0.05), rgba(255, 28, 4, 0.05));
+            box-shadow: 0 8px 30px rgba(231, 71, 60, 0.15);
+        }
+
+        .cta-button-photos:hover {
+            background: linear-gradient(135deg, rgba(231, 71, 60, 0.05), rgba(255, 28, 4, 0.05));
+            box-shadow: 0 8px 30px rgba(231, 71, 60, 0.15);
         }
     }
 
@@ -1506,6 +1657,16 @@ h6 {
             border: 2px solid var(--accent-color);
         }
 
+    @media (max-width: 1199px) {
+        .resume .resume-title {
+            color: var(--heading-color);
+            font-size: 26px;
+            font-weight: 700;
+            margin-top: 0rem;
+            margin-bottom: 2rem;
+        }
+    }
+
     /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1584,72 +1745,184 @@ h6 {
                 color: var(--contrast-color);
             }*/
 
-    /*--------------------------------------------------------------
-# Service Details Section
---------------------------------------------------------------*/
-    .service-details .services-list {
-        background-color: var(--surface-color);
-        padding: 10px 30px;
-        border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-        margin-bottom: 20px;
+
+/* ========================================
+   PAGE SERVICES - 2 COLONNES EN MOBILE
+   À ajouter à la fin de votre main.css
+   ======================================== */
+
+/* VERSION MOBILE - 2 colonnes avec texte court */
+@media (max-width: 1199px) {
+    /* Réduire l'espacement de la section services */
+    .services-page .services.section {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
-        .service-details .services-list a {
-            display: block;
-            line-height: 1;
-            padding: 8px 0 8px 15px;
-            border-left: 3px solid color-mix(in srgb, var(--default-color), transparent 70%);
-            margin: 20px 0;
-            color: color-mix(in srgb, var(--default-color), transparent 20%);
-            transition: 0.3s;
-        }
-
-            .service-details .services-list a.active {
-                color: var(--heading-color);
-                font-weight: 700;
-                border-color: var(--accent-color);
-            }
-
-            .service-details .services-list a:hover {
-                border-color: var(--accent-color);
-            }
-
-    .service-details .services-img {
-        margin-bottom: 20px;
+    /* Grid 2 colonnes au lieu de 1 */
+    .services-page .services .row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+        row-gap: 0.8rem;
     }
 
-    .service-details h3 {
-        font-size: 26px;
-        font-weight: 700;
-    }
-
-    .service-details h4 {
-        font-size: 20px;
-        font-weight: 700;
-    }
-
-    .service-details p {
-        font-size: 15px;
-    }
-
-    .service-details ul {
-        list-style: none;
+    /* Reset Bootstrap columns */
+    .services-page .services .col-lg-4,
+    .services-page .services .col-md-6 {
+        width: 100%;
         padding: 0;
-        font-size: 15px;
     }
 
-        .service-details ul li {
-            padding: 5px 0;
-            display: flex;
-            align-items: center;
+    /* Cartes services sans fond blanc */
+    .services-page .service-item {
+        background: transparent !important;
+        box-shadow: none !important;
+        padding: 0.8rem !important;
+        text-align: center;
+        height: 100%;
+    }
+
+        /* Supprimer tous les effets hover */
+        .services-page .service-item:hover {
+            transform: none !important;
+            background: transparent !important;
+            border-color: transparent !important;
         }
 
-        .service-details ul i {
-            font-size: 20px;
-            margin-right: 8px;
-            color: var(--accent-color);
+        /* Icônes plus petites */
+        .services-page .service-item .icon {
+            width: 45px !important;
+            height: 45px !important;
+            margin: 0 auto 0.6rem !important;
+            border-radius: 8px !important;
         }
 
+            .services-page .service-item .icon i {
+                font-size: 20px !important;
+            }
+
+            .services-page .service-item .icon::before {
+                display: none !important;
+            }
+
+        /* Pas d'effet hover sur les icônes */
+        .services-page .service-item:hover .icon {
+            transform: none !important;
+            background: var(--accent-color) !important;
+        }
+
+            .services-page .service-item:hover .icon i {
+                color: var(--contrast-color) !important;
+            }
+
+        /* Titre plus petit */
+        .services-page .service-item h3 {
+            font-size: 13px !important;
+            margin: 0 0 0.5rem 0 !important;
+            line-height: 1.2 !important;
+            font-weight: 700 !important;
+        }
+
+            /* Cacher le titre long et afficher le titre court */
+            .services-page .service-item h3.title-full {
+                display: none !important;
+            }
+
+            .services-page .service-item h3.title-short {
+                display: block !important;
+            }
+
+        /* Texte court pour mobile */
+        .services-page .service-item p {
+            font-size: 11px !important;
+            line-height: 1.4 !important;
+            margin: 0 !important;
+        }
+
+            /* Cacher le texte long et afficher le texte court */
+            .services-page .service-item p.description-full {
+                display: none !important;
+            }
+
+            .services-page .service-item p.description-short {
+                display: block !important;
+            }
+
+        /* Pas d'effet hover sur le texte */
+        .services-page .service-item:hover h3,
+        .services-page .service-item:hover p {
+            color: var(--font-color) !important;
+        }
+}
+
+/* VERSION DESKTOP - Texte complet original */
+@media (min-width: 1200px) {
+    /* Cacher le texte court et afficher le texte complet */
+    .services-page .service-item p.description-short {
+        display: none !important;
+    }
+
+    .services-page .service-item p.description-full {
+        display: block !important;
+    }
+
+    /* Cacher le titre court et afficher le titre long */
+    .services-page .service-item h3.title-short {
+        display: none !important;
+    }
+
+    .services-page .service-item h3.title-full {
+        display: block !important;
+    }
+}
+
+/* SECTION CONTACT - Plus visible rapidement */
+@media (max-width: 1199px) {
+    .services-page .contact.section {
+        padding-top: 1.5rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    /* Titre contact en rouge pour visibilité */
+    .services-page .contact .section-title div {
+        font-size: 24px !important;
+        color: var(--accent-color) !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    /* Card contact plus compacte */
+    .services-page .contact-card-wrapper {
+        padding: 0rem 0rem !important;
+    }
+
+    .services-page .contact-item {
+        padding: 15px !important;
+        margin-bottom: 15px !important;
+    }
+
+        .services-page .contact-item .icon {
+            width: 45px !important;
+            height: 45px !important;
+            margin-right: 15px !important;
+        }
+
+            .services-page .contact-item .icon svg {
+                width: 22px !important;
+                height: 22px !important;
+            }
+
+    .services-page .contact-label {
+        font-size: 0.75em !important;
+        margin-bottom: 3px !important;
+    }
+
+    .services-page .contact-value {
+        font-size: 1em !important;
+    }
+}
+
+ 
     /*--------------------------------------------------------------
 # Portfolio Section (Photos + vidéos)
 --------------------------------------------------------------*/
@@ -1993,7 +2266,7 @@ h6 {
     @media (min-width: 1200px) {
         .clients {
             background-color: var(--background-color);
-            padding: 40px 0;
+            padding: 93px 0;
         }
 
         .clients-grid {
@@ -2040,7 +2313,8 @@ h6 {
     @media (max-width: 1199px) {
         .clients {
             background-color: var(--background-color);
-            padding: 40px 0;
+            padding-top: 13rem;
+            padding-bottom: 6rem;
         }
 
         .clients-grid {
@@ -3068,7 +3342,7 @@ h6 {
     font-weight: 400;
     color: var(--font-color);
     font-family: var(--heading-font);
-    padding: 0 1.2rem;
+    padding: 5rem; 1.2rem;
     position: relative;
     margin-top: -1rem;
 }
@@ -3085,7 +3359,7 @@ h6 {
 @media (max-width: 768px) {
     .interest-item {
         font-size: 1rem;
-        padding: 0 0.8rem;
+        padding: 1rem 0.8rem;
     }
 }
 
@@ -3218,6 +3492,17 @@ h6 {
             margin-bottom: 2rem;
         }
 
+    /* Plus de padding pour le texte sur mobile */
+    .about-page .about-section .container {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+    .about-page .about-content {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
     .about-photo {
         width: 18rem;
         height: 18rem;
@@ -3236,11 +3521,11 @@ h6 {
 
     /* Section Compétences */
     .skills-section {
-        padding: 3rem 0;
+        padding: 1rem 0;
     }
 
     .section-title {
-        margin-bottom:2rem;
+        margin-bottom:-1rem;
     }
 
         .section-title h2 {
@@ -3251,6 +3536,8 @@ h6 {
 
     .skill-item {
         padding: 1.5rem;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
     }
 
     .skill-icon {
@@ -3258,6 +3545,8 @@ h6 {
         height: 60px;
         min-width: 60px;
         font-size: 1.5rem;
+        margin-left: -0.4rem;
+        margin-right:0.4rem;
     }
 
     .skill-name {
