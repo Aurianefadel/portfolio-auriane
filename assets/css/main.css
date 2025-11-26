@@ -2349,8 +2349,9 @@ h6 {
             }
 
         .video-item:has(.video-wrapper.vertical) .video-info {
-            max-width: 30rem;
-            margin: 0rem auto;
+                    max-width: 30rem;
+                    margin: 1.5rem auto;
+                    margin-bottom: 0rem;
         }
 
         .video-wrapper iframe {
@@ -2384,6 +2385,18 @@ h6 {
                 margin-bottom: 0;
                 line-height: 1.6;
             }
+
+            /* Ajuster la hauteur des embeds Instagram verticaux pour afficher tout le contenu */
+            .video-gallery-section .video-wrapper.vertical {
+                padding-bottom: 0 !important;
+                height: auto;
+            }
+
+            .video-gallery-section .video-wrapper.vertical iframe {
+                position: relative !important;
+                height: 650px; /* Ajustez cette valeur selon vos besoins */
+                min-height: 0px;
+}
     }
 
     /* Mobile et Tablette (max 1199px) */
@@ -2427,6 +2440,11 @@ h6 {
                 width: 100%;
                 height: 100%;
                 border: 0;
+            }
+
+                .video-gallery-section .video-wrapper.vertical iframe {
+                height: 800px;
+                min-height: 0px;
             }
 
         .video-info {
