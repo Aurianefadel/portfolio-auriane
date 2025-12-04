@@ -85,7 +85,7 @@
                 <div class="container">
                     <ol>
                         <li><a class="text-decoration-underline" href="photos.html">Retour aux photos</a></li>
-                        <li class="current text-black">Affiches et graphiques</li>
+                        <li class="current text-black">Graphisme</li>
                     </ol>
                 </div>
             </nav>
@@ -94,17 +94,17 @@
         <section class="photo-gallery-section">
             <div class="photo-gallery-grid">
 
-                <!-- Photo 9 - Tall -->
-                <div class="gallery-item tall" data-index="0">
+                <!-- Photo 1 - Tall -->
+                <div class="gallery-item tall" data-index="0" data-description="Affiche du film Escargot, le grand voyage du petit-gris diffusé sur Arte G.E.I.E."> 
                     <img src="assets/img/MesPhotos/affiches/Affiche_Escargots.jpg" alt="Photo 1">
                 </div>
 
-                <!-- Photo 11 - Tall -->
-                <div class="gallery-item tall" data-index="1">
+                <!-- Photo 2 - Tall -->
+                <div class="gallery-item tall" data-index="1" data-description="Affiche du film Terre de Légendes diffusé sur Arte G.E.I.E.">
                     <img src="assets/img/MesPhotos/affiches/Affiche_RacinesUrbaines.jpg" alt="Photo 2">
                 </div>
 
-                <!-- Photo 12 - Tall -->
+                <!-- Photo 3 - Tall -->
                 <div class="gallery-item tall" data-index="2">
                     <img src="assets/img/MesPhotos/affiches/Affiche_BiographiesAnimales.jpg" alt="Photo 3">
                 </div>
@@ -210,88 +210,92 @@
     </footer>
 
     <script>
-        // Lightbox functionality
-        const galleryItems = document.querySelectorAll('.gallery-item');
-        const lightbox = document.getElementById('lightbox');
-        const lightboxImg = document.getElementById('lightbox-img');
-        const lightboxClose = document.getElementById('lightbox-close');
-        const lightboxPrev = document.getElementById('lightbox-prev');
-        const lightboxNext = document.getElementById('lightbox-next');
-        const lightboxCounter = document.getElementById('lightbox-counter');
+    // Lightbox functionality
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+    const lightboxPrev = document.getElementById('lightbox-prev');
+    const lightboxNext = document.getElementById('lightbox-next');
+    const lightboxCounter = document.getElementById('lightbox-counter');
+    const lightboxDescription = document.getElementById('lightbox-description');  // ← AJOUTEZ CETTE LIGNE
 
-        let currentIndex = 0;
-        const totalImages = galleryItems.length;
+    let currentIndex = 0;
+    const totalImages = galleryItems.length;
 
-        // Ouvrir lightbox
-        galleryItems.forEach(item => {
-            item.addEventListener('click', () => {
-                currentIndex = parseInt(item.getAttribute('data-index'));
-                openLightbox();
-            });
+    // Ouvrir lightbox
+    galleryItems.forEach(item => {
+        item.addEventListener('click', () => {
+            currentIndex = parseInt(item.getAttribute('data-index'));
+            openLightbox();
         });
+    });
 
-        function openLightbox() {
-            const imgSrc = galleryItems[currentIndex].querySelector('img').src;
-            lightboxImg.src = imgSrc;
-            lightbox.classList.add('active');
-            updateCounter();
-            document.body.style.overflow = 'hidden';
+    function openLightbox() {
+        const currentItem = galleryItems[currentIndex];  // ← MODIFIEZ CETTE LIGNE
+        const imgSrc = currentItem.querySelector('img').src;  // ← MODIFIEZ CETTE LIGNE
+        const description = currentItem.getAttribute('data-description') || '';  // ← AJOUTEZ CETTE LIGNE
+        
+        lightboxImg.src = imgSrc;
+        lightboxDescription.textContent = description;  // ← AJOUTEZ CETTE LIGNE
+        lightbox.classList.add('active');
+        updateCounter();
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Fermer lightbox
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
         }
+    });
 
-        // Fermer lightbox
-        lightboxClose.addEventListener('click', closeLightbox);
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) {
-                closeLightbox();
-            }
-        });
+    function closeLightbox() {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    }
 
-        function closeLightbox() {
-            lightbox.classList.remove('active');
-            document.body.style.overflow = '';
-        }
+    // Navigation
+    lightboxPrev.addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+        openLightbox();
+    });
 
-        // Navigation
-        lightboxPrev.addEventListener('click', (e) => {
-            e.stopPropagation();
+    lightboxNext.addEventListener('click', (e) => {
+        e.stopPropagation();
+        currentIndex = (currentIndex + 1) % totalImages;
+        openLightbox();
+    });
+
+    // Clavier
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('active')) return;
+
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowLeft') {
             currentIndex = (currentIndex - 1 + totalImages) % totalImages;
             openLightbox();
-        });
-
-        lightboxNext.addEventListener('click', (e) => {
-            e.stopPropagation();
+        }
+        if (e.key === 'ArrowRight') {
             currentIndex = (currentIndex + 1) % totalImages;
             openLightbox();
-        });
-
-        // Clavier
-        document.addEventListener('keydown', (e) => {
-            if (!lightbox.classList.contains('active')) return;
-
-            if (e.key === 'Escape') closeLightbox();
-            if (e.key === 'ArrowLeft') {
-                currentIndex = (currentIndex - 1 + totalImages) % totalImages;
-                openLightbox();
-            }
-            if (e.key === 'ArrowRight') {
-                currentIndex = (currentIndex + 1) % totalImages;
-                openLightbox();
-            }
-        });
-
-        function updateCounter() {
-            lightboxCounter.textContent = `${currentIndex + 1} / ${totalImages}`;
         }
+    });
 
-        // Preloader
-        window.addEventListener('load', () => {
-            const preloader = document.getElementById('preloader');
-            if (preloader) {
-                preloader.style.display = 'none';
-            }
-        });
+    function updateCounter() {
+        lightboxCounter.textContent = `${currentIndex + 1} / ${totalImages}`;
+    }
 
-    </script>
+    // Preloader
+    window.addEventListener('load', () => {
+        const preloader = document.getElementById('preloader');
+        if (preloader) {
+            preloader.style.display = 'none';
+        }
+    });
+</script>
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
