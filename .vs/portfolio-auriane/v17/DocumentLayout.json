@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "D:\\GitHub\\portfolio-auriane\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\autoportraits.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:autoportraits.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\photos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:photos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\affiches-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:affiches-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\videos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:videos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\clips-musicaux.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:clips-musicaux.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\courtsmetrages.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:courtsmetrages.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\lives-teasers.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lives-teasers.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\hugo-decrypte.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:hugo-decrypte.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\webedia-montages.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webedia-montages.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\videos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:videos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\services.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -43,20 +55,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:portfolio.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\photos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:photos.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\phoenix-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:phoenix-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\merlinlilou-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:merlinlilou-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\lives-teasers.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lives-teasers.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\juliette-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -75,10 +79,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dansleschamps-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\hugo-decrypte.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:hugo-decrypte.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\creations-vlogs.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:creations-vlogs.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -93,6 +93,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\concert-photo-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:concert-photo-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\clips-musicaux.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:clips-musicaux.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\cassandra-details.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -111,6 +115,10 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\css\\main.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GitHub\\portfolio-auriane\\assets\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\js\\main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
@@ -122,7 +130,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -142,165 +150,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "merlinlilou-details.html",
-              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\merlinlilou-details.html",
-              "RelativeDocumentMoniker": "merlinlilou-details.html",
-              "ToolTip": "D:\\GitHub\\portfolio-auriane\\merlinlilou-details.html",
-              "RelativeToolTip": "merlinlilou-details.html",
-              "ViewState": "AgIAACQAAAAAAAAAAAAWwDcAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "autoportraits.html",
+              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\autoportraits.html",
+              "RelativeDocumentMoniker": "autoportraits.html",
+              "ToolTip": "D:\\GitHub\\portfolio-auriane\\autoportraits.html",
+              "RelativeToolTip": "autoportraits.html",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAK0AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T15:36:23.181Z"
+              "WhenOpened": "2026-02-11T12:24:10.809Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "phoenix-details.html",
-              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\phoenix-details.html",
-              "RelativeDocumentMoniker": "phoenix-details.html",
-              "ToolTip": "D:\\GitHub\\portfolio-auriane\\phoenix-details.html",
-              "RelativeToolTip": "phoenix-details.html",
-              "ViewState": "AgIAABAAAAAAAAAAAAAWwDcAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "courtsmetrages.html",
+              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\courtsmetrages.html",
+              "RelativeDocumentMoniker": "courtsmetrages.html",
+              "ToolTip": "D:\\GitHub\\portfolio-auriane\\courtsmetrages.html",
+              "RelativeToolTip": "courtsmetrages.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T15:36:27.333Z"
+              "WhenOpened": "2026-02-11T11:34:11.676Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "photos.html",
-              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\photos.html",
-              "RelativeDocumentMoniker": "photos.html",
-              "ToolTip": "D:\\GitHub\\portfolio-auriane\\photos.html",
-              "RelativeToolTip": "photos.html",
-              "ViewState": "AgIAABAAAAAAAAAAAAAWwDcAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T15:35:20.028Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "resume.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\resume.html",
               "RelativeDocumentMoniker": "resume.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\resume.html",
               "RelativeToolTip": "resume.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-21T13:35:47.305Z"
+              "WhenOpened": "2025-10-21T13:35:47.305Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "salledebain-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\salledebain-details.html",
               "RelativeDocumentMoniker": "salledebain-details.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\salledebain-details.html",
               "RelativeToolTip": "salledebain-details.html",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAADcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T15:36:32.84Z"
+              "WhenOpened": "2025-10-20T15:36:32.84Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "services.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\services.html",
               "RelativeDocumentMoniker": "services.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\services.html",
               "RelativeToolTip": "services.html",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADEAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T13:56:55.221Z"
+              "WhenOpened": "2025-10-20T13:56:55.221Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "videos.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\videos.html",
               "RelativeDocumentMoniker": "videos.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\videos.html",
               "RelativeToolTip": "videos.html",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAWwEAAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAWwJIAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T15:35:27.119Z"
+              "WhenOpened": "2025-10-20T15:35:27.119Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "webedia-montages.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\webedia-montages.html",
               "RelativeDocumentMoniker": "webedia-montages.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\webedia-montages.html",
               "RelativeToolTip": "webedia-montages.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T08:30:06.331Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "clips-musicaux.html",
-              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\clips-musicaux.html",
-              "RelativeDocumentMoniker": "clips-musicaux.html",
-              "ToolTip": "D:\\GitHub\\portfolio-auriane\\clips-musicaux.html",
-              "RelativeToolTip": "clips-musicaux.html",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAmwFwAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T15:37:06.882Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "main.css",
-              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\assets\\css\\main.css",
-              "RelativeDocumentMoniker": "assets\\css\\main.css",
-              "ToolTip": "D:\\GitHub\\portfolio-auriane\\assets\\css\\main.css",
-              "RelativeToolTip": "assets\\css\\main.css",
-              "ViewState": "AgIAADMPAAAAAAAAAAAkwE4PAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-21T10:11:08.005Z",
+              "WhenOpened": "2025-10-20T08:30:06.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "hugo-decrypte.html",
+              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\hugo-decrypte.html",
+              "RelativeDocumentMoniker": "hugo-decrypte.html",
+              "ToolTip": "D:\\GitHub\\portfolio-auriane\\hugo-decrypte.html",
+              "RelativeToolTip": "hugo-decrypte.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-20T15:37:22.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "lives-teasers.html",
+              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\lives-teasers.html",
+              "RelativeDocumentMoniker": "lives-teasers.html",
+              "ToolTip": "D:\\GitHub\\portfolio-auriane\\lives-teasers.html",
+              "RelativeToolTip": "lives-teasers.html",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-20T09:21:43.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "affiches-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\affiches-details.html",
               "RelativeDocumentMoniker": "affiches-details.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\affiches-details.html",
               "RelativeToolTip": "affiches-details.html",
-              "ViewState": "AgIAAPAAAAAAAAAAAAAkwBUBAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAH4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-10-20T15:36:51.155Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "lives-teasers.html",
-              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\lives-teasers.html",
-              "RelativeDocumentMoniker": "lives-teasers.html",
-              "ToolTip": "D:\\GitHub\\portfolio-auriane\\lives-teasers.html",
-              "RelativeToolTip": "lives-teasers.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "photos.html",
+              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\photos.html",
+              "RelativeDocumentMoniker": "photos.html",
+              "ToolTip": "D:\\GitHub\\portfolio-auriane\\photos.html",
+              "RelativeToolTip": "photos.html",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAHcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T09:21:43.61Z"
+              "WhenOpened": "2025-10-20T15:35:20.028Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "juliette-details.html",
-              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\juliette-details.html",
-              "RelativeDocumentMoniker": "juliette-details.html",
-              "ToolTip": "D:\\GitHub\\portfolio-auriane\\juliette-details.html",
-              "RelativeToolTip": "juliette-details.html",
-              "ViewState": "AgIAACMAAAAAAAAAAAAWwDcAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T15:37:32.544Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Readme.txt",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\Readme.txt",
               "RelativeDocumentMoniker": "Readme.txt",
@@ -308,55 +301,99 @@
               "RelativeToolTip": "Readme.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-11-25T12:32:28.979Z"
+              "WhenOpened": "2025-11-25T12:32:28.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "portfolio.html",
+              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\portfolio.html",
+              "RelativeDocumentMoniker": "portfolio.html",
+              "ToolTip": "D:\\GitHub\\portfolio-auriane\\portfolio.html",
+              "RelativeToolTip": "portfolio.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-21T13:35:50.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "phoenix-details.html",
+              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\phoenix-details.html",
+              "RelativeDocumentMoniker": "phoenix-details.html",
+              "ToolTip": "D:\\GitHub\\portfolio-auriane\\phoenix-details.html",
+              "RelativeToolTip": "phoenix-details.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-20T15:36:27.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "merlinlilou-details.html",
+              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\merlinlilou-details.html",
+              "RelativeDocumentMoniker": "merlinlilou-details.html",
+              "ToolTip": "D:\\GitHub\\portfolio-auriane\\merlinlilou-details.html",
+              "RelativeToolTip": "merlinlilou-details.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-20T15:36:23.181Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "juliette-details.html",
+              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\juliette-details.html",
+              "RelativeDocumentMoniker": "juliette-details.html",
+              "ToolTip": "D:\\GitHub\\portfolio-auriane\\juliette-details.html",
+              "RelativeToolTip": "juliette-details.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-20T15:37:32.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "index.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\index.html",
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-21T10:11:40.272Z"
+              "WhenOpened": "2025-10-21T10:11:40.272Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ilona-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\ilona-details.html",
               "RelativeDocumentMoniker": "ilona-details.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\ilona-details.html",
               "RelativeToolTip": "ilona-details.html",
-              "ViewState": "AgIAABAAAAAAAAAAAAAWwDcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T15:37:25.757Z"
+              "WhenOpened": "2025-10-20T15:37:25.757Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "dansleschamps-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\dansleschamps-details.html",
               "RelativeDocumentMoniker": "dansleschamps-details.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\dansleschamps-details.html",
               "RelativeToolTip": "dansleschamps-details.html",
-              "ViewState": "AgIAABkAAAAAAAAAAAAWwC8AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T15:37:18.716Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "hugo-decrypte.html",
-              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\hugo-decrypte.html",
-              "RelativeDocumentMoniker": "hugo-decrypte.html",
-              "ToolTip": "D:\\GitHub\\portfolio-auriane\\hugo-decrypte.html",
-              "RelativeToolTip": "hugo-decrypte.html",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAWwCIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T15:37:22.39Z"
+              "WhenOpened": "2025-10-20T15:37:18.716Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -366,9 +403,10 @@
               "RelativeDocumentMoniker": "creations-vlogs.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\creations-vlogs.html",
               "RelativeToolTip": "creations-vlogs.html",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAWwCkAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T09:19:02.884Z"
+              "WhenOpened": "2025-10-20T09:19:02.884Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -378,21 +416,10 @@
               "RelativeDocumentMoniker": "CQLJDALN-details.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\CQLJDALN-details.html",
               "RelativeToolTip": "CQLJDALN-details.html",
-              "ViewState": "AgIAACAAAAAAAAAAAAAWwC8AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T15:37:11.201Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "portfolio.html",
-              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\portfolio.html",
-              "RelativeDocumentMoniker": "portfolio.html",
-              "ToolTip": "D:\\GitHub\\portfolio-auriane\\portfolio.html",
-              "RelativeToolTip": "portfolio.html",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAWwDMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-21T13:35:50.942Z"
+              "WhenOpened": "2025-10-20T15:37:11.201Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -402,9 +429,10 @@
               "RelativeDocumentMoniker": "contact.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\contact.html",
               "RelativeToolTip": "contact.html",
-              "ViewState": "AgIAACMAAAAAAAAAAAAWwCsAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T15:37:10.237Z"
+              "WhenOpened": "2025-10-20T15:37:10.237Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -414,61 +442,92 @@
               "RelativeDocumentMoniker": "concert-photo-details.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\concert-photo-details.html",
               "RelativeToolTip": "concert-photo-details.html",
-              "ViewState": "AgIAABAAAAAAAAAAAAAWwC8AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T16:28:00.108Z"
+              "WhenOpened": "2025-10-20T16:28:00.108Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
+              "Title": "clips-musicaux.html",
+              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\clips-musicaux.html",
+              "RelativeDocumentMoniker": "clips-musicaux.html",
+              "ToolTip": "D:\\GitHub\\portfolio-auriane\\clips-musicaux.html",
+              "RelativeToolTip": "clips-musicaux.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-20T15:37:06.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "cassandra-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\cassandra-details.html",
               "RelativeDocumentMoniker": "cassandra-details.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\cassandra-details.html",
               "RelativeToolTip": "cassandra-details.html",
-              "ViewState": "AgIAABAAAAAAAAAAAAAWwDcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T15:37:03.278Z"
+              "WhenOpened": "2025-10-20T15:37:03.278Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "bnf-details.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\bnf-details.html",
               "RelativeDocumentMoniker": "bnf-details.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\bnf-details.html",
               "RelativeToolTip": "bnf-details.html",
-              "ViewState": "AgIAABAAAAAAAAAAAAAWwDcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T15:36:59.389Z"
+              "WhenOpened": "2025-10-20T15:36:59.389Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "animations.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\animations.html",
               "RelativeDocumentMoniker": "animations.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\animations.html",
               "RelativeToolTip": "animations.html",
-              "ViewState": "AgIAABYAAAAAAAAAAAAWwCIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-19T12:31:17.684Z"
+              "WhenOpened": "2025-10-19T12:31:17.684Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "about.html",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\about.html",
               "RelativeDocumentMoniker": "about.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\about.html",
               "RelativeToolTip": "about.html",
-              "ViewState": "AgIAACwAAAAAAAAAAAAWwFQAAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T10:31:33.767Z"
+              "WhenOpened": "2025-10-20T10:31:33.767Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
+              "Title": "main.css",
+              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\assets\\css\\main.css",
+              "RelativeDocumentMoniker": "assets\\css\\main.css",
+              "ToolTip": "D:\\GitHub\\portfolio-auriane\\assets\\css\\main.css",
+              "RelativeToolTip": "assets\\css\\main.css",
+              "ViewState": "AgIAAIkIAAAAAAAAAAAWwKsIAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-21T10:11:08.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "main.js",
               "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\assets\\js\\main.js",
               "RelativeDocumentMoniker": "assets\\js\\main.js",

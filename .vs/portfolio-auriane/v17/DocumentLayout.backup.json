@@ -122,7 +122,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -139,18 +139,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "lives-teasers.html",
-              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\lives-teasers.html",
-              "RelativeDocumentMoniker": "lives-teasers.html",
-              "ToolTip": "D:\\GitHub\\portfolio-auriane\\lives-teasers.html",
-              "RelativeToolTip": "lives-teasers.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T09:21:43.61Z"
             },
             {
               "$type": "Document",
@@ -186,7 +174,8 @@
               "RelativeToolTip": "photos.html",
               "ViewState": "AgIAABAAAAAAAAAAAAAWwDcAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T15:35:20.028Z"
+              "WhenOpened": "2025-10-20T15:35:20.028Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -258,8 +247,7 @@
               "RelativeToolTip": "clips-musicaux.html",
               "ViewState": "AgIAAD0AAAAAAAAAAAAmwFwAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-10-20T15:37:06.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T15:37:06.882Z"
             },
             {
               "$type": "Document",
@@ -269,7 +257,7 @@
               "RelativeDocumentMoniker": "assets\\css\\main.css",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\assets\\css\\main.css",
               "RelativeToolTip": "assets\\css\\main.css",
-              "ViewState": "AgIAADMPAAAAAAAAAAAkwG8PAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAIkIAAAAAAAAAAAWwEIPAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-10-21T10:11:08.005Z",
               "EditorCaption": ""
@@ -282,10 +270,22 @@
               "RelativeDocumentMoniker": "affiches-details.html",
               "ToolTip": "D:\\GitHub\\portfolio-auriane\\affiches-details.html",
               "RelativeToolTip": "affiches-details.html",
-              "ViewState": "AgIAAAIBAAAAAAAAAAAkwD4BAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-10-20T15:36:51.155Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "lives-teasers.html",
+              "DocumentMoniker": "D:\\GitHub\\portfolio-auriane\\lives-teasers.html",
+              "RelativeDocumentMoniker": "lives-teasers.html",
+              "ToolTip": "D:\\GitHub\\portfolio-auriane\\lives-teasers.html",
+              "RelativeToolTip": "lives-teasers.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-10-20T09:21:43.61Z"
             },
             {
               "$type": "Document",
