@@ -4254,3 +4254,24 @@ h6 {
         font-size: 12px;
     }
 }
+
+/* "Le Feu" : garantit une hauteur stable pour les vidéos verticales.
+   Le calcul de hauteur par padding-bottom pouvait s'effondrer dans la
+   grille de la page ; on le remplace par un aspect-ratio fixe 9:16. */
+.reseaux-sociaux-page .embla__slide.vertical .video-wrapper.vertical {
+    padding-bottom: 0;
+    height: auto;
+    aspect-ratio: 9 / 16;
+    width: 100%;
+    max-width: 267px;
+    background: #000;
+    border-radius: 10px;
+}
+
+.reseaux-sociaux-page .embla__slide.vertical .video-wrapper.vertical iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
