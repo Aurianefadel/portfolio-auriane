@@ -4211,3 +4211,46 @@ h6 {
 .video-gallery-section.reseaux-sociaux-page {
     overflow: visible;
 }
+
+/* ============================================================
+   AJUSTEMENTS CARROUSELS WEBEDIA (page Réseaux sociaux)
+   Vignettes plus compactes : boutons plus petits,
+   moins d'espace titre/vidéo, titre plus discret.
+   ============================================================ */
+
+/* Boutons de navigation plus petits, proportionnés aux vignettes */
+.reseaux-sociaux-page .embla__button {
+    width: 34px;
+    height: 34px;
+    font-size: 15px;
+}
+
+@media (max-width: 1199px) {
+    .reseaux-sociaux-page .embla__button {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+/* Texte sous chaque vidéo : compact (moins d'espace) et titre plus petit
+   pour mettre l'image en avant */
+.reseaux-sociaux-page .embla__slide.vertical .video-info,
+.reseaux-sociaux-page .embla__slide.square .video-info {
+    padding: 0.4rem 0.7rem 0.6rem;
+}
+
+.reseaux-sociaux-page .embla__slide.vertical .video-info h3,
+.reseaux-sociaux-page .embla__slide.square .video-info h3 {
+    font-size: 13px;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (max-width: 1199px) {
+    .reseaux-sociaux-page .embla__slide.vertical .video-info h3,
+    .reseaux-sociaux-page .embla__slide.square .video-info h3 {
+        font-size: 12px;
+    }
+}
