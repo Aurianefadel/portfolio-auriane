@@ -4227,6 +4227,11 @@ h6 {
     font-size: 15px;
 }
 
+/* Espace sous les boutons de navigation (avant la section suivante) */
+.reseaux-sociaux-page .embla__controls {
+    margin-bottom: 3rem;
+}
+
 @media (max-width: 1199px) {
     .reseaux-sociaux-page .embla__button {
         width: 30px;
