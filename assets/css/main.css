@@ -4245,8 +4245,8 @@ h6 {
    pour mettre l'image en avant */
 .reseaux-sociaux-page .embla__slide.vertical .video-info,
 .reseaux-sociaux-page .embla__slide.square .video-info {
-    padding: 0 0.7rem 0.6rem;
-    margin-top: -0.5rem;
+    padding: 1.6rem 0.7rem 0.6rem;
+    margin-top: 0;
 }
 
 /* Titre cliquable (ouvre la vidéo Facebook) : garde la couleur du texte */
