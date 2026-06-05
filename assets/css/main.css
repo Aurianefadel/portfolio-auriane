@@ -4227,8 +4227,9 @@ h6 {
     font-size: 15px;
 }
 
-/* Espace sous les boutons de navigation (avant la section suivante) */
+/* Espace autour des boutons de navigation */
 .reseaux-sociaux-page .embla__controls {
+    margin-top: 0;
     margin-bottom: 3rem;
 }
 
