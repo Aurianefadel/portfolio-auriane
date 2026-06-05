@@ -4246,7 +4246,7 @@ h6 {
 .reseaux-sociaux-page .embla__slide.vertical .video-info,
 .reseaux-sociaux-page .embla__slide.square .video-info {
     padding: 0 0.7rem 0.6rem;
-    margin-top: -1rem;
+    margin-top: -0.5rem;
 }
 
 /* Titre cliquable (ouvre la vidéo Facebook) : garde la couleur du texte */
