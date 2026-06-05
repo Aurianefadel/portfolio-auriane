@@ -4090,6 +4090,8 @@ h6 {
 
 .reseaux-section {
     margin-bottom: 5rem;
+    padding-top: 0;
+    padding-bottom: 0;
     scroll-margin-top: 120px; /* fallback si JS désactivé */
 }
 
