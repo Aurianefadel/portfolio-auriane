@@ -232,7 +232,7 @@
             try {
                 const embla = EmblaCarousel(emblaNode, {
                     loop: false,
-                    dragFree: true,
+                    watchDrag: false,
                     containScroll: 'trimSnaps',
                     slidesToScroll: 1,
                     align: 'start'
