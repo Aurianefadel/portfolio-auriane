@@ -2496,12 +2496,12 @@ h6 {
 
     .embla__viewport {
         overflow: hidden;
-        cursor: grab;
+        cursor: default;
         padding-left: 2rem;
     }
 
         .embla__viewport:active {
-            cursor: grabbing;
+            cursor: default;
         }
 
     .embla__container {
