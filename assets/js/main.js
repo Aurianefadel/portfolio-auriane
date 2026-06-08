@@ -232,7 +232,7 @@
             try {
                 const embla = EmblaCarousel(emblaNode, {
                     loop: false,
-                    dragFree: true,
+                    watchDrag: false,
                     containScroll: 'trimSnaps',
                     slidesToScroll: 1,
                     align: 'start'
@@ -246,6 +246,38 @@
                 const nextBtn = emblaContainer.querySelector('.embla__button--next');
                 const counterCurrent = emblaContainer.querySelector('.embla__counter-current');
                 const counterTotal = emblaContainer.querySelector('.embla__counter-total');
+
+                // --- Chargement différé des vidéos ---
+                // Les iframes ont un data-src : on ne les charge que lorsque le
+                // carrousel entre à l'écran, et uniquement pour les slides visibles
+                // (les autres se chargent quand on navigue avec les flèches).
+                function loadVisibleIframes() {
+                    const slides = embla.slideNodes();
+                    embla.slidesInView().forEach(function (i) {
+                        const fr = slides[i].querySelector('iframe[data-src]');
+                        if (fr) {
+                            fr.src = fr.getAttribute('data-src');
+                            fr.removeAttribute('data-src');
+                        }
+                    });
+                }
+                if ('IntersectionObserver' in window) {
+                    const io = new IntersectionObserver(function (entries) {
+                        if (entries.some(function (e) { return e.isIntersecting; })) {
+                            loadVisibleIframes();
+                            embla.on('slidesInView', loadVisibleIframes);
+                            embla.on('select', loadVisibleIframes);
+                            io.disconnect();
+                        }
+                    }, { rootMargin: '300px' });
+                    io.observe(emblaContainer);
+                } else {
+                    // Navigateur sans IntersectionObserver : tout charger
+                    embla.slideNodes().forEach(function (s) {
+                        const fr = s.querySelector('iframe[data-src]');
+                        if (fr) { fr.src = fr.getAttribute('data-src'); fr.removeAttribute('data-src'); }
+                    });
+                }
 
                 // Fonction pour mettre à jour le compteur
                 function updateCounter() {

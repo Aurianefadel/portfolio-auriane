@@ -2496,12 +2496,12 @@ h6 {
 
     .embla__viewport {
         overflow: hidden;
-        cursor: grab;
+        cursor: default;
         padding-left: 2rem;
     }
 
         .embla__viewport:active {
-            cursor: grabbing;
+            cursor: default;
         }
 
     .embla__container {
@@ -3949,4 +3949,348 @@ h6 {
     .cta-button:active {
         transform: scale(0.98);
     }
+}
+
+/* ============================================================
+   AJOUTS POUR LA CARTE "RÉSEAUX SOCIAUX / SHORTS"
+   (Sur la page videos.html)
+   ============================================================ */
+
+/* Dégradé coloré utilisé en fond de la carte (réutilise l'effet
+   blur + zoom + assombrissement déjà défini sur .category-card) */
+.category-card .card-background-gradient {
+    background-image: linear-gradient(135deg, #d85a30 0%, #b13a8a 50%, #1d3fa5 100%);
+    background-size: cover;
+}
+
+/* Conteneur du texte centré (titre + bulles) */
+.category-card .card-overlay-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* Bulles avec les noms des clients */
+.category-card .client-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+}
+
+.category-card .client-pill {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.18);
+    border: 0.5px solid rgba(255, 255, 255, 0.4);
+    border-radius: 999px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.3px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.category-card:hover .client-pill {
+    background: rgba(255, 255, 255, 0.28);
+    border-color: rgba(255, 255, 255, 0.55);
+}
+
+/* Sur mobile, bulles un peu plus petites */
+@media (max-width: 575.98px) {
+    .category-card .client-pill {
+        font-size: 11px;
+        padding: 3px 10px;
+    }
+
+    .category-card .card-overlay-content {
+        gap: 10px;
+    }
+}
+
+
+/* ============================================================
+   PAGE "RÉSEAUX SOCIAUX / SHORTS"
+   (Sidebar sticky à gauche + sections empilées à droite)
+   ============================================================ */
+
+.reseaux-sociaux-page {
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+}
+
+/* Layout en 2 colonnes (sidebar + contenu) sur desktop */
+.reseaux-layout {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 0rem;
+}
+
+/* Sidebar */
+.reseaux-sidebar {
+    position: relative;
+    height: 100%;
+}
+
+.reseaux-sidebar-inner {
+    position: sticky;
+    top: 120px; /* sous le header fixe */
+    padding: 1rem 0;
+}
+
+.reseaux-sidebar-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 14px;
+    padding-left: 16px;
+}
+
+.reseaux-nav {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.reseaux-nav-link {
+    display: block;
+    padding: 10px 16px;
+    font-size: 14px;
+    color: #888;
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    margin-left: -1px;
+    transition: all 0.25s ease;
+    font-weight: 400;
+}
+
+    .reseaux-nav-link:hover {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .reseaux-nav-link.active {
+        color: #000;
+        border-left-color: #000;
+        font-weight: 500;
+    }
+
+/* Contenu principal */
+.reseaux-content {
+    min-width: 0; /* évite que la grille déborde */
+}
+
+.reseaux-section {
+    margin-bottom: 5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    scroll-margin-top: 120px; /* fallback si JS désactivé */
+}
+
+    .reseaux-section:last-child {
+        margin-bottom: 0;
+    }
+
+.reseaux-section-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+    .reseaux-section-header h2 {
+        font-family: 'Cal Sans', sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+        margin: 0 0 0.25rem;
+        color: #000;
+    }
+
+    .reseaux-section-header p {
+        font-size: 14px;
+        color: #666;
+        margin: 0;
+    }
+
+/* Placeholder visuel pour les sections en attente de contenu */
+.reseaux-content .video-placeholder {
+    grid-column: 1 / -1;
+    aspect-ratio: auto;
+    min-height: 120px;
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px dashed rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+    .reseaux-content .video-placeholder p {
+        margin: 0;
+        color: #999;
+        font-size: 13px;
+        font-style: italic;
+        text-align: center;
+    }
+
+/* === Responsive : sidebar horizontale sticky sur tablette/mobile === */
+@media (max-width: 991.98px) {
+    .reseaux-layout {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .reseaux-sidebar-inner {
+        position: sticky;
+        top: 80px; /* sous le header fixe (plus petit sur mobile) */
+        background: #fff;
+        z-index: 10;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .reseaux-sidebar-label {
+        display: none; /* on gagne de la place verticale */
+    }
+
+    .reseaux-nav {
+        flex-direction: row;
+        border-left: none;
+        gap: 4px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+        .reseaux-nav::-webkit-scrollbar {
+            display: none;
+        }
+
+    .reseaux-nav-link {
+        white-space: nowrap;
+        padding: 8px 14px;
+        border-left: none;
+        border-bottom: 2px solid transparent;
+        margin-left: 0;
+        font-size: 13px;
+        flex-shrink: 0;
+    }
+
+        .reseaux-nav-link.active {
+            border-left-color: transparent;
+            border-bottom-color: #000;
+        }
+
+    .reseaux-section {
+        margin-bottom: 3.5rem;
+        scroll-margin-top: 160px; /* header + sidebar horizontale */
+    }
+
+    .reseaux-section-header h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .reseaux-sociaux-page {
+        padding-bottom: 4rem;
+    }
+
+    .reseaux-section-header h2 {
+        font-size: 22px;
+    }
+}
+
+/* Permet à la sidebar sticky de fonctionner sur la page Réseaux sociaux */
+.video-gallery-section.reseaux-sociaux-page {
+    overflow: visible;
+}
+
+/* ============================================================
+   AJUSTEMENTS CARROUSELS WEBEDIA (page Réseaux sociaux)
+   Vignettes plus compactes : boutons plus petits,
+   moins d'espace titre/vidéo, titre plus discret.
+   ============================================================ */
+
+/* Boutons de navigation plus petits, proportionnés aux vignettes */
+.reseaux-sociaux-page .embla__button {
+    width: 34px;
+    height: 34px;
+    font-size: 15px;
+}
+
+/* Espace autour des boutons de navigation */
+.reseaux-sociaux-page .embla__controls {
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 1199px) {
+    .reseaux-sociaux-page .embla__button {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+}
+
+/* Texte sous chaque vidéo : compact (moins d'espace) et titre plus petit
+   pour mettre l'image en avant */
+.reseaux-sociaux-page .embla__slide.vertical .video-info,
+.reseaux-sociaux-page .embla__slide.square .video-info {
+    padding: 1.1rem 0.7rem 0.6rem;
+    margin-top: 0;
+}
+
+/* Titre cliquable (ouvre la vidéo Facebook) : garde la couleur du texte */
+.reseaux-sociaux-page .embla__slide .video-info h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.reseaux-sociaux-page .embla__slide .video-info h3 a:hover {
+    color: var(--accent-color);
+}
+
+.reseaux-sociaux-page .embla__slide.vertical .video-info h3,
+.reseaux-sociaux-page .embla__slide.square .video-info h3 {
+    font-size: 13px;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (max-width: 1199px) {
+    .reseaux-sociaux-page .embla__slide.vertical .video-info h3,
+    .reseaux-sociaux-page .embla__slide.square .video-info h3 {
+        font-size: 12px;
+    }
+}
+
+/* "Le Feu" : garantit une hauteur stable pour les vidéos verticales.
+   Le calcul de hauteur par padding-bottom pouvait s'effondrer dans la
+   grille de la page ; on le remplace par un aspect-ratio fixe 9:16. */
+.reseaux-sociaux-page .embla__slide.vertical .video-wrapper.vertical {
+    padding-bottom: 0;
+    height: auto;
+    aspect-ratio: 9 / 16;
+    width: 100%;
+    max-width: 267px;
+    background: #000;
+    border-radius: 10px;
+}
+
+.reseaux-sociaux-page .embla__slide.vertical .video-wrapper.vertical iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
