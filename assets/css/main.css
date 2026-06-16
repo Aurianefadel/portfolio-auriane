@@ -3668,6 +3668,11 @@ h6 {
             .gallery-item.smallsquare {
                 grid-column: span 1;
             }
+
+            /* Tall uniquement en mobile */
+            .gallery-item.tallmobile {
+                grid-row: span 2;
+            }
     }
 
     /* Lightbox personnalisé */
