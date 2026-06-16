@@ -435,7 +435,7 @@ h6 {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    height: 36rem;
+    aspect-ratio: 4 / 5;
     margin-bottom: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -720,7 +720,7 @@ h6 {
         position: relative;
         border-radius: 10px;
         overflow: hidden;
-        height: 24rem;
+        aspect-ratio: 4 / 5;
         margin-bottom: 1rem;
         cursor: pointer;
         transition: all 0.3s ease;
