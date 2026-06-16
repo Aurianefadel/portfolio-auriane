@@ -435,7 +435,7 @@ h6 {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    aspect-ratio: 4 / 5;
+    height: 36rem;
     margin-bottom: 1rem;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -720,7 +720,7 @@ h6 {
         position: relative;
         border-radius: 10px;
         overflow: hidden;
-        aspect-ratio: 4 / 5;
+        height: 24rem;
         margin-bottom: 1rem;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -4293,4 +4293,22 @@ h6 {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/* TEST : vignettes des galeries photos au format 4:5 (uniforme) */
+.photo-gallery-grid {
+    grid-auto-rows: auto !important;
+}
+
+.gallery-item {
+    aspect-ratio: 4 / 5 !important;
+}
+
+.gallery-item.large,
+.gallery-item.wide,
+.gallery-item.tall,
+.gallery-item.widemobile,
+.gallery-item.smallsquare {
+    grid-column: span 1 !important;
+    grid-row: span 1 !important;
 }
