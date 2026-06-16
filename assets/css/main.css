@@ -4299,3 +4299,21 @@ h6 {
     width: 100%;
     height: 100%;
 }
+
+/* Webedia : vidéos un peu plus larges sur mobile */
+@media (max-width: 1199px) {
+    #webedia .embla__slide.vertical .video-item,
+    #webedia .embla__slide.vertical .video-wrapper.vertical {
+        max-width: 270px;
+    }
+
+    #webedia .embla__slide.vertical .video-item {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+/* Webedia : rapproche les deux carrousels (Jamy / Le Feu) en hauteur */
+#webedia .embla__controls {
+    margin-bottom: 1rem;
+}
