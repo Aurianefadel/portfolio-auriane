@@ -4311,6 +4311,12 @@ h6 {
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
+
+    /* Bordures latérales réduites : on voit plus de vidéos dans le carrousel */
+    #webedia .embla {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
 }
 
 /* Webedia : rapproche les deux carrousels (Jamy / Le Feu) en hauteur */
