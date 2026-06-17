@@ -2201,6 +2201,7 @@ h6 {
             background-color: var(--background-color);
             padding: 40px 0;
             padding-bottom: 0;
+            overflow: visible;
         }
 
         .clients-grid {
@@ -2256,6 +2257,7 @@ h6 {
             padding: 8rem 1rem;
             padding-top: 8rem;
             padding-bottom: 2rem;
+            overflow: visible;
         }
 
         .clients-grid {
