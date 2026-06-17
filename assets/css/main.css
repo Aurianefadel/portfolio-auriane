@@ -4397,6 +4397,21 @@ h6 {
         margin-top: 0.15rem;
     }
 
+.testimonial-footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.4rem;
+}
+
+.testimonial-logo {
+    height: 48px;
+    width: auto;
+    max-width: 90px;
+    object-fit: contain;
+    flex: 0 0 auto;
+}
+
 /* Flèches + points Swiper aux couleurs de la charte */
 .testimonials .swiper-button-next,
 .testimonials .swiper-button-prev {
