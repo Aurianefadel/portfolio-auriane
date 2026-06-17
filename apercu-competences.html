@@ -29,10 +29,14 @@
 
         /* ===== OPTION A — ÉPURÉ (sans cartes, lignes fines) ===== */
         .v-a .grid { gap: 0 2.5rem; }
-        .v-a .sk-item { display:flex; align-items:flex-start; gap:.9rem; padding:.9rem 0; border-bottom:1px solid rgba(0,0,0,.08); }
-        .v-a .sk-icon { width:34px; height:34px; min-width:34px; display:flex; align-items:center; justify-content:center; color:var(--accent); font-size:1rem; background:color-mix(in srgb, var(--accent) 12%, transparent); border-radius:50%; }
-        .v-a .sk-name { font-size:.98rem; margin-bottom:.15rem; }
+        .v-a .sk-item { display:flex; align-items:flex-start; gap:.9rem; padding:.9rem .6rem; border-bottom:1px solid rgba(0,0,0,.08); border-radius:8px; transition: transform .3s ease, background .3s ease; }
+        .v-a .sk-icon { width:34px; height:34px; min-width:34px; display:flex; align-items:center; justify-content:center; color:var(--accent); font-size:1rem; background:color-mix(in srgb, var(--accent) 12%, transparent); border-radius:50%; transition: all .3s ease; }
+        .v-a .sk-name { font-size:.98rem; margin-bottom:.15rem; transition: color .3s ease; }
         .v-a .sk-desc { font-size:.82rem; }
+        /* Hover : l'icône se remplit en rouge et tourne, le titre passe en rouge, la ligne glisse */
+        .v-a .sk-item:hover { transform: translateX(6px); background: color-mix(in srgb, var(--accent) 4%, transparent); }
+        .v-a .sk-item:hover .sk-icon { background: linear-gradient(135deg, var(--accent), #ff5a4d); color:#fff; transform: scale(1.12) rotate(5deg); box-shadow: 0 5px 15px rgba(231,71,60,.35); }
+        .v-a .sk-item:hover .sk-name { color: var(--accent); }
 
         /* ===== OPTION B — CARTES PLATES (légères) ===== */
         .v-b .sk-item { background:#fff; border:1px solid rgba(0,0,0,.07); border-radius:10px; padding:.85rem 1rem; display:flex; align-items:center; gap:.85rem; box-shadow:none; }
