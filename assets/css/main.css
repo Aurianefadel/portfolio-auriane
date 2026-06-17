@@ -2243,6 +2243,12 @@ h6 {
         }
     }
 
+    /* Webedia (mot-symbole large) : plafonne la largeur pour rester
+       au meme gabarit visuel que les autres logos */
+    .client-logo img.logo-webedia {
+        max-width: 150px;
+    }
+
     /* Mobile et Tablette */
     @media (max-width: 1199px) {
         .clients {
