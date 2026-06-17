@@ -4331,7 +4331,6 @@ h6 {
     font-family: var(--heading-font);
     font-size: 1.9rem;
     font-weight: 700;
-    text-transform: uppercase;
     color: var(--heading-color);
     margin-bottom: 3rem;
 }
