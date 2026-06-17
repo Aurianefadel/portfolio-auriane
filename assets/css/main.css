@@ -4337,53 +4337,44 @@ h6 {
 }
 
 .testimonials-swiper {
-    max-width: 760px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 3rem 1rem;
     position: relative;
 }
 
-.testimonial-card {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    background: #fff;
-    border-radius: 16px;
-    padding: 2.2rem 2.4rem;
-    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+.testimonials-swiper .swiper-slide {
+    width: 600px;
+    max-width: 78%;
+    height: auto;
+    opacity: 0.3;
+    transition: opacity 0.4s ease;
 }
 
-.testimonial-avatar {
-    flex: 0 0 110px;
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    overflow: hidden;
-    background: color-mix(in srgb, var(--accent-color) 12%, #eee);
-    color: color-mix(in srgb, var(--accent-color) 70%, #999);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .testimonials-swiper .swiper-slide-active {
+        opacity: 1;
+    }
+
+.testimonial {
+    position: relative;
+    padding: 0.5rem 1rem 0 2rem;
 }
 
-    .testimonial-avatar img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .testimonial-avatar svg {
-        width: 60%;
-        height: 60%;
-    }
-
-.testimonial-body {
-    flex: 1;
+.testimonial::before {
+    content: "\201C";
+    position: absolute;
+    left: -0.1rem;
+    top: -1.5rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3.8rem;
+    line-height: 1;
+    color: var(--accent-color);
+    opacity: 0.4;
 }
 
 .testimonial-text {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.05rem;
+    line-height: 1.65;
     color: #444;
     font-style: italic;
     margin-bottom: 1rem;
@@ -4394,7 +4385,6 @@ h6 {
     font-weight: 700;
     font-size: 0.95rem;
     color: var(--heading-color);
-    text-align: right;
 }
 
     .testimonial-author span {
@@ -4467,16 +4457,13 @@ h6 {
         padding: 0 0 1rem;
     }
 
-    .testimonial-card {
-        flex-direction: column;
-        text-align: center;
-        gap: 1.2rem;
-        padding: 1.8rem 1.4rem;
+    .testimonials-swiper .swiper-slide {
+        width: 85%;
+        max-width: 85%;
     }
 
-    .testimonial-text,
-    .testimonial-author {
-        text-align: center;
+    .testimonial-text {
+        font-size: 1rem;
     }
 
     .testimonials .swiper-button-next,
