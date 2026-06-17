@@ -2200,7 +2200,7 @@ h6 {
         .clients {
             background-color: var(--background-color);
             padding: 40px 0;
-            padding-bottom: 9rem;
+            padding-bottom: 3rem;
         }
 
         .clients-grid {
@@ -2255,6 +2255,7 @@ h6 {
             background-color: var(--background-color);
             padding: 8rem 1rem;
             padding-top: 8rem;
+            padding-bottom: 2rem;
         }
 
         .clients-grid {
@@ -4312,4 +4313,114 @@ h6 {
 /* Webedia : rapproche les deux carrousels (Jamy / Le Feu) en hauteur */
 #webedia .embla__controls {
     margin-bottom: 1rem;
+}
+
+/* ===== Section Avis clients (témoignages épurés) ===== */
+.testimonials {
+    background-color: var(--background-color);
+    padding: 1rem 2rem 7rem;
+}
+
+.testimonials .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.testimonials-title {
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--heading-color);
+    margin-bottom: 3rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.8rem 4rem;
+}
+
+.testimonial {
+    position: relative;
+    padding-left: 1.6rem;
+}
+
+.testimonial::before {
+    content: "\201C";
+    position: absolute;
+    left: -0.3rem;
+    top: -1.4rem;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: var(--accent-color);
+    opacity: 0.45;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    font-style: italic;
+    margin-bottom: 0.9rem;
+}
+
+.testimonial-author {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: var(--heading-color);
+}
+
+    .testimonial-author span {
+        display: block;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 0.82rem;
+        color: #888;
+        margin-top: 0.15rem;
+    }
+
+.testimonials-cta {
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+.btn-avis {
+    display: inline-block;
+    padding: 0.7rem 1.9rem;
+    background: var(--accent-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(231, 71, 60, 0.25);
+}
+
+    .btn-avis:hover {
+        background: linear-gradient(135deg, #d13329, #ff5a4d);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(231, 71, 60, 0.35);
+        color: #fff;
+    }
+
+@media (max-width: 1199px) {
+    .testimonials {
+        padding: 1rem 1.5rem 4rem;
+    }
+
+    .testimonials-title {
+        font-size: 1.4rem;
+        margin-bottom: 2.2rem;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 2.4rem;
+    }
 }
