@@ -1145,7 +1145,7 @@ h6 {
         color: var(--font-color);
         background-color: var(--background-color);
         padding-top: 2rem;
-        padding-bottom: 3rem;
+        padding-bottom: 8rem;
         padding-left: 5rem;
         padding-right: 5rem;
         scroll-margin-top: 100px;
@@ -1163,14 +1163,9 @@ h6 {
         }
     }
 
-    /* Reduit l'espace sous la section Services (page Services uniquement) */
+    /* Exception : espace reduit sous la section Services (page Services uniquement) */
     .services-page #services.section {
         padding-bottom: 1rem;
-    }
-
-    /* Espace sous la section Contact (page Services uniquement) */
-    .services-page #contact.section {
-        padding-bottom: 8rem;
     }
 
     /*--------------------------------------------------------------
