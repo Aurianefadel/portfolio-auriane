@@ -1163,6 +1163,11 @@ h6 {
         }
     }
 
+    /* Reduit l'espace sous la section Services (page Services uniquement) */
+    .services-page #services.section {
+        padding-bottom: 1rem;
+    }
+
     /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
