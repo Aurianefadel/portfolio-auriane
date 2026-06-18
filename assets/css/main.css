@@ -2053,24 +2053,25 @@ h6 {
     }
 
     .contact .contact-block {
-        padding: 1.4rem 0;
+        padding: 1.8rem 0;
     }
 
     .contact .contact-label {
         font-family: var(--heading-font);
-        font-size: 0.78rem;
+        font-size: 0.72rem;
         text-transform: uppercase;
-        letter-spacing: 3px;
-        color: var(--accent-color);
-        font-weight: 600;
-        margin-bottom: 0.7rem;
+        letter-spacing: 4px;
+        color: #aaa;
+        font-weight: 500;
+        margin-bottom: 0.9rem;
     }
 
     .contact .contact-link {
         display: inline-block;
         font-family: var(--heading-font);
-        font-size: 2rem;
-        font-weight: 700;
+        font-size: 1.9rem;
+        font-weight: 300;
+        letter-spacing: 0.5px;
         color: var(--heading-color);
         text-decoration: none;
         line-height: 1.2;
@@ -2082,9 +2083,9 @@ h6 {
             content: "";
             position: absolute;
             left: 50%;
-            bottom: -6px;
+            bottom: -8px;
             width: 0;
-            height: 2px;
+            height: 1px;
             background: var(--accent-color);
             transition: width 0.35s ease, left 0.35s ease;
         }
@@ -2097,13 +2098,6 @@ h6 {
                 width: 100%;
                 left: 0;
             }
-
-    .contact .contact-divider {
-        width: 40px;
-        height: 1px;
-        background: rgba(0, 0, 0, 0.12);
-        margin: 0 auto;
-    }
 
     /* Version mobile unique */
     @media (max-width: 1199px) {
