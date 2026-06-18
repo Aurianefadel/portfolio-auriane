@@ -1269,9 +1269,10 @@ h6 {
     right: 20px;
 }
 
-@media (max-width: 1199) {
+@media (max-width: 1199px) {
     .hero-arrow {
         font-size: 2.5rem;
+        top: 72%;
     }
 
     .hero-arrow-left {
