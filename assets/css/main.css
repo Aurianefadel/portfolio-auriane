@@ -881,6 +881,28 @@ h6 {
                     text-decoration: none;
                 }
 
+    .footer-contact-btn {
+        display: inline-block;
+        font-family: var(--heading-font);
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        color: #fff;
+        background: var(--accent-color);
+        padding: 11px 30px;
+        border-radius: 50px;
+        text-decoration: none;
+        margin: 6px 0 28px;
+        transition: all 0.3s ease;
+    }
+
+        .footer-contact-btn:hover {
+            color: #fff;
+            background: color-mix(in srgb, var(--accent-color), #000 12%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(231, 71, 60, 0.3);
+        }
+
         .footer .copyright {
             padding-top: 25px;
             border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
