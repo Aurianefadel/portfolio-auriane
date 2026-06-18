@@ -1782,6 +1782,17 @@ h6 {
                 font-size: 12px;
                 line-height: 1.4;
             }
+
+            .services .service-item .service-price {
+                font-size: 11px;
+                padding: 3px 11px;
+                margin-top: 9px;
+            }
+
+        .services-pricing-note {
+            font-size: 11.5px;
+            margin-top: 1.8rem;
+        }
     }
 
     /* ========================================
