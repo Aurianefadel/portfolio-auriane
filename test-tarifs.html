@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>TEST - Visuels tarifs</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            background: var(--background-color);
+            padding: 40px 20px 80px;
+        }
+
+        .demo-wrap {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+
+        .demo-title {
+            font-family: var(--heading-font);
+            font-size: 1.9rem;
+            text-align: center;
+            color: var(--heading-color);
+            margin: 0 0 6px;
+        }
+
+        .demo-sub {
+            text-align: center;
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 36px;
+            max-width: 620px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .demo-divider {
+            border: none;
+            border-top: 1px dashed rgba(0, 0, 0, 0.15);
+            margin: 80px 0;
+        }
+
+        .accent {
+            color: var(--accent-color);
+        }
+
+        /* =================================================
+           OPTION A — "À partir de" sous chaque service
+           ================================================= */
+        .optA .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.4rem;
+        }
+
+        .optA .item {
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        .optA .ic {
+            width: 46px;
+            height: 46px;
+            margin: 0 auto 12px;
+            background: var(--accent-color);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .optA h3 {
+            font-family: var(--heading-font);
+            font-size: 17px;
+            font-weight: 700;
+            margin: 0 0 6px;
+            color: var(--heading-color);
+        }
+
+        .optA p {
+            font-size: 13px;
+            color: #777;
+            line-height: 1.5;
+            margin: 0 0 10px;
+        }
+
+        .optA .price {
+            display: inline-block;
+            font-family: var(--heading-font);
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent-color);
+            border: 1px solid color-mix(in srgb, var(--accent-color) 40%, transparent);
+            border-radius: 50px;
+            padding: 4px 14px;
+        }
+
+        /* =================================================
+           OPTION B — Forfaits en colonnes
+           ================================================= */
+        .optB .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.4rem;
+            align-items: stretch;
+        }
+
+        .optB .card {
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.07);
+            border-radius: 16px;
+            padding: 2rem 1.6rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .optB .card.featured {
+            border-color: var(--accent-color);
+            box-shadow: 0 16px 40px rgba(231, 71, 60, 0.18);
+            transform: scale(1.04);
+        }
+
+        .optB .badge {
+            display: inline-block;
+            background: var(--accent-color);
+            color: #fff;
+            font-family: var(--heading-font);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 4px 14px;
+            border-radius: 50px;
+            margin: 0 auto 14px;
+        }
+
+        .optB h3 {
+            font-family: var(--heading-font);
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--heading-color);
+            margin: 0 0 4px;
+        }
+
+        .optB .amount {
+            font-family: var(--heading-font);
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin: 12px 0 4px;
+            line-height: 1;
+        }
+
+        .optB .amount small {
+            font-size: 0.8rem;
+            color: #999;
+            font-weight: 500;
+        }
+
+        .optB ul {
+            list-style: none;
+            padding: 0;
+            margin: 18px 0 22px;
+            text-align: left;
+            flex-grow: 1;
+        }
+
+        .optB li {
+            font-size: 13.5px;
+            color: #555;
+            padding: 7px 0 7px 26px;
+            position: relative;
+        }
+
+        .optB li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-size: 12px;
+        }
+
+        .optB .btn {
+            display: inline-block;
+            font-family: var(--heading-font);
+            font-size: 13px;
+            font-weight: 600;
+            padding: 10px 0;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        .optB .card.featured .btn {
+            background: var(--accent-color);
+            color: #fff;
+        }
+
+        /* =================================================
+           OPTION C — Tableau récapitulatif
+           ================================================= */
+        .optC .table {
+            background: #fff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06);
+            max-width: 640px;
+            margin: 0 auto;
+        }
+
+        .optC .line {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1.1rem 1.6rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .optC .line:last-child {
+            border-bottom: none;
+        }
+
+        .optC .l-left {
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+        }
+
+        .optC .l-ic {
+            color: var(--accent-color);
+            font-size: 16px;
+            width: 22px;
+            text-align: center;
+        }
+
+        .optC .l-name {
+            font-family: var(--heading-font);
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--heading-color);
+        }
+
+        .optC .l-price {
+            font-family: var(--heading-font);
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--accent-color);
+            white-space: nowrap;
+        }
+
+        .optC .l-price small {
+            display: block;
+            font-size: 10px;
+            color: #aaa;
+            font-weight: 500;
+            text-align: right;
+        }
+
+        /* =================================================
+           OPTION D — Liste à prix (style carte contact)
+           ================================================= */
+        .optD .list {
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            border-radius: 16px;
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.06);
+            padding: 0.5rem 1.6rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .optD .row {
+            display: flex;
+            align-items: center;
+            gap: 1.1rem;
+            padding: 1.1rem 0.2rem;
+        }
+
+        .optD .ic {
+            width: 44px;
+            height: 44px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-color);
+            background: color-mix(in srgb, var(--accent-color) 12%, transparent);
+            font-size: 18px;
+        }
+
+        .optD .info {
+            flex-grow: 1;
+            min-width: 0;
+        }
+
+        .optD .info h3 {
+            font-family: var(--heading-font);
+            font-size: 15px;
+            font-weight: 600;
+            margin: 0 0 2px;
+            color: var(--heading-color);
+        }
+
+        .optD .info p {
+            font-size: 12.5px;
+            color: #888;
+            margin: 0;
+        }
+
+        .optD .price {
+            font-family: var(--heading-font);
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--accent-color);
+            white-space: nowrap;
+        }
+
+        .optD .price small {
+            display: block;
+            font-size: 10px;
+            color: #aaa;
+            text-align: right;
+        }
+
+        .optD .sep {
+            height: 0;
+            border-top: 1px dashed rgba(0, 0, 0, 0.12);
+            margin: 0 0.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .optA .grid,
+            .optB .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .optB .card.featured {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo-wrap">
+
+        <!-- ===================== OPTION A ===================== -->
+        <h2 class="demo-title">Option A — « À partir de » sous chaque service</h2>
+        <p class="demo-sub">Le plus discret : un petit prix plancher sous chacun de tes services actuels. Cohérent avec ta page Services telle qu'elle est.</p>
+        <section class="optA">
+            <div class="grid">
+                <div class="item">
+                    <div class="ic"><i class="fa-solid fa-film"></i></div>
+                    <h3>Montage vidéo</h3>
+                    <p>Court, long, clip, réseaux, teasers...</p>
+                    <span class="price">à partir de 150 €</span>
+                </div>
+                <div class="item">
+                    <div class="ic"><i class="fa-solid fa-camera"></i></div>
+                    <h3>Photographie</h3>
+                    <p>Événements, book, mode.</p>
+                    <span class="price">à partir de 200 €</span>
+                </div>
+                <div class="item">
+                    <div class="ic"><i class="fa-solid fa-eye"></i></div>
+                    <h3>Retouches photos</h3>
+                    <p>Retouche professionnelle.</p>
+                    <span class="price">à partir de 15 € / photo</span>
+                </div>
+                <div class="item">
+                    <div class="ic"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Créations graphiques</h3>
+                    <p>Affiches, logos, visuels.</p>
+                    <span class="price">à partir de 80 €</span>
+                </div>
+                <div class="item">
+                    <div class="ic"><i class="fa-solid fa-clapperboard"></i></div>
+                    <h3>Réalisation vidéos</h3>
+                    <p>Vlogs, making of, projets divers.</p>
+                    <span class="price">sur devis</span>
+                </div>
+                <div class="item">
+                    <div class="ic"><i class="fa-solid fa-calendar"></i></div>
+                    <h3>Captations</h3>
+                    <p>Live / événements, multi-caméras.</p>
+                    <span class="price">à partir de 300 €</span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="demo-divider">
+
+        <!-- ===================== OPTION B ===================== -->
+        <h2 class="demo-title">Option B — Forfaits en colonnes</h2>
+        <p class="demo-sub">Le plus « pro » et vendeur : 2–3 formules claires, celle du milieu mise en avant. Idéal pour des packs vidéo.</p>
+        <section class="optB">
+            <div class="grid">
+                <div class="card">
+                    <h3>Essentiel</h3>
+                    <div class="amount">150 €</div>
+                    <ul>
+                        <li>Montage court (jusqu'à 3 min)</li>
+                        <li>Habillage simple</li>
+                        <li>1 révision incluse</li>
+                        <li>Livraison HD</li>
+                    </ul>
+                    <a href="#" class="btn">Demander un devis</a>
+                </div>
+                <div class="card featured">
+                    <span class="badge">Le plus demandé</span>
+                    <h3>Standard</h3>
+                    <div class="amount">350 €</div>
+                    <ul>
+                        <li>Montage jusqu'à 8 min</li>
+                        <li>Étalonnage & mixage son</li>
+                        <li>Sous-titres inclus</li>
+                        <li>2 révisions incluses</li>
+                        <li>Livraison HD + format réseaux</li>
+                    </ul>
+                    <a href="#" class="btn">Demander un devis</a>
+                </div>
+                <div class="card">
+                    <h3>Premium</h3>
+                    <div class="amount">sur devis</div>
+                    <ul>
+                        <li>Projet long / complexe</li>
+                        <li>Motion design & animations</li>
+                        <li>Révisions illimitées</li>
+                        <li>Accompagnement complet</li>
+                    </ul>
+                    <a href="#" class="btn">Me contacter</a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="demo-divider">
+
+        <!-- ===================== OPTION C ===================== -->
+        <h2 class="demo-title">Option C — Tableau récapitulatif</h2>
+        <p class="demo-sub">Le plus lisible : toutes tes prestations et leurs prix de départ dans une grille compacte.</p>
+        <section class="optC">
+            <div class="table">
+                <div class="line">
+                    <div class="l-left"><span class="l-ic"><i class="fa-solid fa-film"></i></span><span class="l-name">Montage vidéo</span></div>
+                    <div class="l-price">150 €<small>à partir de</small></div>
+                </div>
+                <div class="line">
+                    <div class="l-left"><span class="l-ic"><i class="fa-solid fa-camera"></i></span><span class="l-name">Photographie</span></div>
+                    <div class="l-price">200 €<small>à partir de</small></div>
+                </div>
+                <div class="line">
+                    <div class="l-left"><span class="l-ic"><i class="fa-solid fa-eye"></i></span><span class="l-name">Retouches photos</span></div>
+                    <div class="l-price">15 €<small>par photo</small></div>
+                </div>
+                <div class="line">
+                    <div class="l-left"><span class="l-ic"><i class="fa-solid fa-wand-magic-sparkles"></i></span><span class="l-name">Créations graphiques</span></div>
+                    <div class="l-price">80 €<small>à partir de</small></div>
+                </div>
+                <div class="line">
+                    <div class="l-left"><span class="l-ic"><i class="fa-solid fa-clapperboard"></i></span><span class="l-name">Réalisation de vidéos</span></div>
+                    <div class="l-price">sur devis</div>
+                </div>
+                <div class="line">
+                    <div class="l-left"><span class="l-ic"><i class="fa-solid fa-calendar"></i></span><span class="l-name">Captation de live</span></div>
+                    <div class="l-price">300 €<small>à partir de</small></div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="demo-divider">
+
+        <!-- ===================== OPTION D ===================== -->
+        <h2 class="demo-title">Option D — Liste à prix (style carte contact)</h2>
+        <p class="demo-sub">Même langage visuel que ta carte contact : icône ronde + description + prix aligné à droite.</p>
+        <section class="optD">
+            <div class="list">
+                <div class="row">
+                    <div class="ic"><i class="fa-solid fa-film"></i></div>
+                    <div class="info"><h3>Montage vidéo</h3><p>Court, long, clip, teasers...</p></div>
+                    <div class="price">150 €<small>à partir de</small></div>
+                </div>
+                <div class="sep"></div>
+                <div class="row">
+                    <div class="ic"><i class="fa-solid fa-camera"></i></div>
+                    <div class="info"><h3>Photographie</h3><p>Événements, book, mode.</p></div>
+                    <div class="price">200 €<small>à partir de</small></div>
+                </div>
+                <div class="sep"></div>
+                <div class="row">
+                    <div class="ic"><i class="fa-solid fa-eye"></i></div>
+                    <div class="info"><h3>Retouches photos</h3><p>Retouche professionnelle.</p></div>
+                    <div class="price">15 €<small>par photo</small></div>
+                </div>
+                <div class="sep"></div>
+                <div class="row">
+                    <div class="ic"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <div class="info"><h3>Créations graphiques</h3><p>Affiches, logos, visuels.</p></div>
+                    <div class="price">80 €<small>à partir de</small></div>
+                </div>
+                <div class="sep"></div>
+                <div class="row">
+                    <div class="ic"><i class="fa-solid fa-calendar"></i></div>
+                    <div class="info"><h3>Captation de live</h3><p>Multi-caméras, événements.</p></div>
+                    <div class="price">300 €<small>à partir de</small></div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>
