@@ -1168,6 +1168,11 @@ h6 {
         padding-bottom: 1rem;
     }
 
+    /* Espace sous la section Contact (page Services uniquement) */
+    .services-page #contact.section {
+        padding-bottom: 8rem;
+    }
+
     /*--------------------------------------------------------------
 # Global Section Titles
 --------------------------------------------------------------*/
