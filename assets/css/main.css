@@ -2247,7 +2247,7 @@ h6 {
     /* Webedia (mot-symbole large) : plafonne la largeur pour rester
        au meme gabarit visuel que les autres logos */
     .client-logo img.logo-webedia {
-        max-width: 150px;
+        max-width: 120px;
     }
 
     /* Mobile et Tablette */
