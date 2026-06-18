@@ -1633,55 +1633,37 @@ h6 {
 # Services Section
 --------------------------------------------------------------*/
     .services .service-item {
-        background-color: var(--surface-color);
         text-align: center;
-        padding: 1rem 1rem;
-        transition: all ease-in-out 0.3s;
+        padding: 0.8rem 0.8rem;
         height: 100%;
     }
 
         .services .service-item .icon {
-            margin: 0 auto;
-            width: 64px;
-            height: 64px;
+            margin: 0 auto 14px;
+            width: 46px;
+            height: 46px;
             background: var(--accent-color);
-            border-radius: 4px;
+            border-radius: 6px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 20px;
-            transition: 0.3s;
-            transform-style: preserve-3d;
         }
 
             .services .service-item .icon i {
                 color: var(--contrast-color);
-                font-size: 28px;
-                transition: ease-in-out 0.3s;
-            }
-
-            .services .service-item .icon::before {
-                position: absolute;
-                content: "";
-                left: -8px;
-                top: -8px;
-                height: 100%;
-                width: 100%;
-                background: color-mix(in srgb, var(--accent-color), transparent 80%);
-                border-radius: 5px;
-                transition: all 0.3s ease-out 0s;
-                transform: translateZ(-1px);
+                font-size: 20px;
             }
 
         .services .service-item h3 {
             font-weight: 700;
-            margin: 10px 0 15px 0;
-            font-size: 22px;
+            margin: 0 0 8px 0;
+            font-size: 17px;
         }
 
         .services .service-item p {
-            line-height: 24px;
-            font-size: 14px;
+            line-height: 1.5;
+            font-size: 13px;
+            color: #777;
             margin-bottom: 0;
         }
 
