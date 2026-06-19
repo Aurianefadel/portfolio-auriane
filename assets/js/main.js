@@ -386,3 +386,13 @@ function changeSlide(direction) {
     clearInterval(slideInterval);
     slideInterval = setInterval(() => changeSlide(1), SLIDE_DURATION);
 }
+
+/* ===== Protection anti-telechargement (cible uniquement les images) =====
+   Desactive le clic droit et le glisser-deposer sur les <img>.
+   Note: dissuasif uniquement, ne remplace pas un vrai filigrane. */
+document.addEventListener('contextmenu', function (e) {
+    if (e.target && e.target.tagName === 'IMG') e.preventDefault();
+});
+document.addEventListener('dragstart', function (e) {
+    if (e.target && e.target.tagName === 'IMG') e.preventDefault();
+});

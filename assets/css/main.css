@@ -4502,3 +4502,15 @@ h6 {
         display: none;
     }
 }
+
+/* ===== Protection anti-telechargement des images (dissuasif) ===== */
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
